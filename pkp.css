@@ -1,39 +1,21 @@
+/* This page is organized along two mental schemas. */
+/* Material that impacts the whole page comes before material that impacts individual sections only */
+/* But sections appear the order they appear on the page moving from top to bottom */
+
+
+
+
+/*When margin isn't set to zero, a small line appears on the left hand side of the screen like everything has slight padding*/
+
 body {
   margin: 0%;
 }
 
+/*Scroll behavior coherently brings the page up or down to the correct spot*/
+/*The HTML background color maintains a consistent color ever if someone on a mac scrolls up or down the page too far*/
 html {
   scroll-behavior: smooth;
   background-color: #F8F8F8;
-}
-
-.pagewidth { 
-  /* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
-  width: 100%;
-  background-color: #002b5c;
-}
-
-.intro { 
-  background-color: #002b5c;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 8%; 
-  height: 100%;
-}
-
-
-h1 {
-font-family: "Montserrat"; 
-font-size: 58px; 
-background-color: #002b5c;
-color: white;
-}
-
-p {
-  font-family: "Montserrat";
-  font-size: 20px;
-  margin-right: 2%;
 }
 
 i {
@@ -45,65 +27,265 @@ b {
   font-weight: 2;
 }
 
-.learnmore {
-  font-family: "Montserrat"; 
+/* NAVIGATION BAR */
+
+    a.nav:link, a.nav:hover, a.nav:active, a.nav:visited  
+    {
+      background: transparent;
+      border-radius: 4px;
+      color: black;
+      text-decoration: none;
+      cursor: pointer; /* Pointer/hand icon */
+      font-family: "Montserrat"; 
+      font-size: 120%; 
+      margin: 5%;
+      padding: 5px;
+      background-color: #F8F8F8;
+    }
+
+    a.nav:hover, a.nav:active
+    {
+      background: #002b5c;
+      color: white;
+    /*  background: #8accff; saving this bc it's alec's favorite color*/ 
+      border-radius: 4px;
+      text-decoration: underline;
+      padding: 5px;
+    /*  font-size: 25px; */
+    }
+
+    .btn-group button {
+      background-color: #F8F8F8;
+      border: transparent; /* Transparent border */
+      color: black; /* Black text */
+      padding: 10px 50px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: center; /* Float the buttons side by side */
+      font-family: "Fjord One"; 
+    /*  font-size: 100%; */
+    }
+
+    /* Add underline on hover */
+    .btn-group button:hover {
+      text-decoration: underline;
+    }
+
+    .navigation { /* container where site navigation buttons sit */
+      padding-top: 20px;
+      padding-bottom: 20px;
+    /*  font-size: 42;*/
+      text-align: center;
+      color: black;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #F8F8F8;
+      overflow: hidden;
+    }
+
+/* This begins << after >> the navigation bar and is closed << after >> the footer */
+.pagewidth { 
+  /* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
+  width: 100%;
   background-color: #002b5c;
-  border-color: white;
-  border-style: solid;
-  color: white;
-  padding: 10px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  margin: 20px 80px;
-  cursor: pointer;
 }
 
-.issues { 
-/*  padding-top: 90px;*/
-  background-color: #F8F8F8;
-  display: block;
-  overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-bottom: 4%;
-}
+/* INTRO SECTION 'HI IM PATRICK */
 
-.learnmore_small {
-  font-family: "Montserrat"; 
-  background-color: #002b5c;
-  color: white;
-  padding: 10px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 30%;
-  margin-bottom: 5%;
-  cursor: pointer;
-}
 
-h2 {
-font-family: "Montserrat"; 
-font-size: 42px; 
-background-color: transparent;
-color: black;
-text-align: center;
-margin: auto;
-padding-top: 80px;
-}
+    .intro { 
+      /* div that holds the entire section */
+      background-color: #002b5c;
+      overflow: auto;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 8%; 
+      height: 100%;
+    }
 
-h3 {
-font-family: "Montserrat"; 
-font-size: 22px; 
-background-color: transparent;
-color: black;
-text-align: center;
-padding: 0px;
-margin: auto;
-margin-top: 5%;
-}
+
+    h1 {
+    font-family: "Montserrat"; 
+    font-size: 58px; 
+    background-color: #002b5c;
+    color: white;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-size: 20px;
+      margin-right: 2%;
+    }
+
+    h5 {
+      font-family: "Montserrat";
+      color: white;
+      font-size: 42px;
+      margin-right: 2%;
+    }
+
+    .learnmore {
+      /* learn more button at the bottom of the section*/
+      font-family: "Montserrat"; 
+      background-color: #002b5c;
+      border-color: white;
+      border-style: solid;
+      color: white;
+      padding: 10px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 20px 80px;
+      cursor: pointer;
+    }
+
+
+/* CORE ISSUES SECTION */
+
+    .issues { 
+    /*This div is where the navigation scrolls to and holds the header*/
+      background-color: #F8F8F8;
+      display: block;
+      overflow: auto;
+      padding-right: 4%;
+      padding-left: 4%;
+      padding-bottom: 0%;
+      padding-top: 4%;
+    }
+
+    .nested_issues { 
+      /* This div holds the issue boxes */
+      background-color: #F8F8F8;
+      display: block;
+      overflow: auto;
+      text-align: center;
+      padding-right: 4%;
+      padding-left: 4%;
+      padding-bottom: 4%;
+      padding-top: 4%;
+    }
+
+/* The following boxes hold the three focus issues*/
+    #st-box { 
+        float:left; 
+        width:30%; 
+        background-color:transparent; 
+        border:solid black; 
+        margin:auto;
+    } 
+    #nd-box { 
+        float:left; 
+        width:30%; 
+        background-color:transparent;  
+        border:solid black; 
+        margin-left:5%; 
+        margin-right:3%;
+    } 
+    #rd-box { 
+        float:right; 
+        width:30%; 
+        margin:auto;
+        background-color:transparent; 
+        border:solid black; 
+    }
+
+
+    .learnmore_small {
+      /* Small learn more button inside each issue box*/
+      font-family: "Montserrat"; 
+      background-color: #002b5c;
+      color: white;
+      padding: 10px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      object-position: center;
+      margin-bottom: 5%;
+      cursor: pointer;
+    }
+
+    h2 {
+      /* Text that 'Core Issues' is written in */
+    font-family: "Montserrat"; 
+    font-size: 42px; 
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    }
+
+    h3 {
+      /* Text inside each issue box*/
+    font-family: "Montserrat"; 
+    font-size: 22px; 
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    margin-top: 5%;
+    }
+
+    /* Why am I running for office section*/
+
+    .aboutme { 
+      /* Holds the section title*/
+      padding-top: 4%;
+      background-color: #002b5c;
+      display: block;
+      overflow: auto;
+      padding-right: 4%;
+      padding-left: 4%;
+      margin-top: 0px;
+      padding-bottom: 0%;
+      text-align: center;
+    }
+
+    .nested_aboutme { 
+      /*Holds the rest of the section */
+      background-color: transparent;
+      display: block;
+      overflow: auto;
+      text-align: center;
+      padding-right: 4%;
+      padding-left: 4%;
+      padding-bottom: 4%;
+      padding-top: 0%;
+    }
+
+    #img-box { 
+      /* Holds the image */
+        float:left; 
+        width:30%; 
+        background-color: transparent; 
+        display: flex;
+        height: auto;
+    } 
+
+
+    #abtme-box { 
+      /*Holds the about me text*/
+        float:left; 
+        width:60%; 
+        background-color:transparent;  
+        margin-left:5%; 
+        margin-right:3%;
+        padding-bottom: 2%;
+    } 
+
+    h6 {
+      /* This is the text that fills the about me box*/
+      font-family: "Montserrat"; 
+      font-size: 16px; 
+      color: white;
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+      }
 
 h4 {
 font-family: "Montserrat"; 
@@ -116,56 +298,6 @@ padding-left: 2%;
 padding-bottom: 2%;
 margin: auto;
 margin-bottom: 5%;
-}
-
-.aboutme { 
-/*  padding-top: 90px;*/
-  background-color: #002b5c;
-  display: block;
-  overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  margin-top: 0px;
-  padding-top: 10px;
-  padding-bottom: 4%;
-  text-align: center;
-}
-
-#img-box { 
-    float:left; 
-    width:30%; 
-    background-color: transparent; 
-/*    margin:auto;*/
-    display: flex;
-    height: auto;
-    margin-top: 0px;
-    padding-top: 0px;
-} 
-#abtme-box { 
-    float:left; 
-    width:60%; 
-    background-color:transparent;  
-    margin-left:5%; 
-    margin-right:3%;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 2%;
-} 
-
-h5 {
-  font-family: "Montserrat";
-  color: white;
-  font-size: 42px;
-  margin-right: 2%;
-}
-
-h6 {
-font-family: "Montserrat"; 
-font-size: 16px; 
-color: white;
-text-align: left;
-padding: 0px;
-margin: 0px;
 }
 
 img {
@@ -183,10 +315,18 @@ img {
   overflow: auto;
   padding-right: 4%;
   padding-left: 4%;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 4%;
   text-align: center;
+}
+
+.ANC_nested { 
+  background-color: #F8F8f8;
+  display: block;
+  overflow: auto;
+  text-align: center;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: 4%;
 }
 
 #anc-box { 
@@ -197,9 +337,6 @@ img {
     overflow: auto;
     padding-right: 4%;
     padding-left: 4%;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     text-align: left;
 } 
 
@@ -212,30 +349,6 @@ img {
   padding-right: 4%;
   padding-left: 4%;
   padding-bottom: 4%;
-}
-
-
-#st-box { 
-    float:left; 
-    width:30%; 
-    background-color:transparent; 
-    border:solid black; 
-    margin:auto;
-} 
-#nd-box { 
-    float:left; 
-    width:30%; 
-    background-color:transparent;  
-    border:solid black; 
-    margin-left:5%; 
-    margin-right:3%;
-} 
-#rd-box { 
-    float:right; 
-    width:30%; 
-    margin:auto;
-    background-color:transparent; 
-    border:solid black; 
 }
 
 .intouch { 
@@ -275,62 +388,6 @@ img {
     width: 40%; 
     margin:auto;
     background-color:transparent;  
-}
-
-a.nav:link, a.nav:hover, a.nav:active, a.nav:visited  
-{
-  background: transparent;
-  border-radius: 4px;
-  color: black;
-  text-decoration: none;
-  cursor: pointer; /* Pointer/hand icon */
-  font-family: "Montserrat"; 
-  font-size: 120%; 
-  margin: 5%;
-  padding: .25px;
-  background-color: #F8F8F8;
-}
-
-a.nav:hover, a.nav:active
-{
-  background: #0077ff;
-  color: white;
-/*  background: #8accff; saving this bc it's alec's favorite color*/ 
-  border-radius: 4px;
-  color: black;
-  text-decoration: underline;
-  padding: .25px;
-/*  font-size: 25px; */
-}
-
-.btn-group button {
-  background-color: #F8F8F8;
-  border: transparent; /* Transparent border */
-  color: black; /* Black text */
-  padding: 10px 50px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: center; /* Float the buttons side by side */
-  font-family: "Fjord One"; 
-/*  font-size: 100%; */
-}
-
-/* Add underline on hover */
-.btn-group button:hover {
-  text-decoration: underline;
-}
-
-.navigation { /* container where site navigation buttons sit */
-  padding-top: 20px;
-  padding-bottom: 20px;
-/*  font-size: 42;*/
-  text-align: center;
-  color: black;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #F8F8F8;
-  overflow: hidden;
 }
 
 
