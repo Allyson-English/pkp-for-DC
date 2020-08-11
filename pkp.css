@@ -19,7 +19,7 @@ html {
 }
 
 i {
-  background-color: #002b5c;
+  background-color: #203865;
 }
 
 b {
@@ -65,22 +65,25 @@ b {
       margin: 0%;
       padding: 0%;
       margin-right: 0%;
-
     }
 
     #nav_1 { 
       background: transparent;
-      border-radius: 1%;
+      border-radius: 4%;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 11%;
+      margin-left: 8%;
+      margin-bottom: 1%;
       padding: .25%;
+      margin-top: .5%;
+
       background-color: #F8F8F8;
+      display: flex;
       float: left;
-      margin-top: 2%;
+      width: 8%;
     } 
 
     #nav_2 { 
@@ -105,13 +108,11 @@ b {
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 12%;
-      margin-bottom: 1%;
-
+      margin-left: 10%;
+      padding: .25%;
       background-color: #F8F8F8;
       float: left;
-      display: flex;
-      width: 10%;
+      margin-top: 2%;
     }
     #nav_4 { 
       background: transparent;
@@ -121,7 +122,7 @@ b {
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
+      margin-left: 10%;
       padding: .25%;
       background-color: #F8F8F8;
       float: left;
@@ -135,7 +136,7 @@ b {
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
+      margin-left: 10%;
       padding: .25%;
       background-color: #F8F8F8;
       float: left;
@@ -144,32 +145,30 @@ b {
 
     a#nav_1:hover, a#nav_1:active
     {
-      background: #002b5c;
-      color: white;
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
     }
     a#nav_2:hover, a#nav_2:active
     {
-      background: #002b5c;
-      color: white;
+      border-radius: 4px;
+      text-decoration: underline;
+      padding: .25%;
+    }
+    a#nav_3:hover, a#nav_2:active
+    {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
     }
     a#nav_4:hover, a#nav_4:active
     {
-      background: #002b5c;
-      color: white;
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
     }
     a#nav_5:hover, a#nav_5:active
     {
-      background: #002b5c;
-      color: white;
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
@@ -181,7 +180,7 @@ b {
 .pagewidth { 
   /* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
   width: 100%;
-  background-color: #002b5c;
+  background-color: #203865;
 }
 
 /* INTRO SECTION 'HI IM PATRICK */
@@ -189,7 +188,7 @@ b {
 
     .intro { 
       /* div that holds the entire section */
-      background-color: #002b5c;
+      background-color: #203865;
       overflow: auto;
       margin-left: 10%;
       margin-right: 10%;
@@ -200,37 +199,69 @@ b {
 
     h1 {
     font-family: "Montserrat"; 
-    font-size: 58px; 
-    background-color: #002b5c;
+    font-size: 400%; 
+    background-color: #203865;
     color: white;
     }
 
-    p {
-      font-family: "Montserrat";
-      font-size: 20px;
-      margin-right: 2%;
+   h2 {
+      /* Text for sections:
+      - I'm running for the Mount Vernon ANC...
+      - Core Issues
+      - Why Am I Running 
+      - What is the Advisory Neighborhood Commission
+      - Get in Touch 
+       some specifications (including color, alignment and padding above/ below are unique to each section, defined in HTML
+       spacing above is controlled with padding, spacing below is controlled with line breaks*/
+    font-family: "Montserrat"; 
+    font-size: 300%; 
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-top: 4.5%;
     }
 
-    h5 {
-      font-family: "Montserrat";
-      color: white;
-      font-size: 42px;
-      margin-right: 2%;
+    h3 {
+      /* Text inside each issue box*/
+    font-family: "Montserrat"; 
+    font-size: 140%; 
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    margin-top: 5%;
     }
+
+    p {
+    font-family: "Montserrat"; 
+    font-size: 100%; 
+    color: black;
+    text-align: left;
+    padding: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+    margin-bottom: 5%;
+    justify-content: 
+    }
+
 
     .learnmore {
       /* learn more button at the bottom of the section*/
       font-family: "Montserrat"; 
-      background-color: #002b5c;
+      background-color: #203865;
       border-color: white;
       border-style: solid;
       color: white;
-      padding: 10px 28px;
+      padding: 1% 5%;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 24px;
-      margin: 20px 80px;
+      font-size: 150%;
+      margin: 2% 6%;
       cursor: pointer;
     }
 
@@ -271,14 +302,14 @@ b {
         float:left; 
         width:30%; 
         background-color:transparent; 
-        border:solid black; 
+        border:solid transparent; 
         margin:auto;
     } 
     #nd-box { 
         float:left; 
         width:30%; 
         background-color:transparent;  
-        border:solid black; 
+        border:solid transparent; 
         margin-left:5%; 
         margin-right:3%;
     } 
@@ -287,46 +318,7 @@ b {
         width:30%; 
         margin:auto;
         background-color:transparent; 
-        border:solid black; 
-    }
-
-
-    .learnmore_small {
-      /* Small learn more button inside each issue box*/
-      font-family: "Montserrat"; 
-      background-color: #002b5c;
-      color: white;
-      padding: 10px 28px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      object-position: center;
-      margin-bottom: 5%;
-      cursor: pointer;
-    }
-
-    h2 {
-      /* Text that 'Core Issues' is written in */
-    font-family: "Montserrat"; 
-    font-size: 42px; 
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    margin: auto;
-    padding-top: 80px;
-    }
-
-    h3 {
-      /* Text inside each issue box*/
-    font-family: "Montserrat"; 
-    font-size: 22px; 
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    padding: 0px;
-    margin: auto;
-    margin-top: 5%;
+        border:solid transparent; 
     }
 
     /* Why am I running for office section*/
@@ -334,7 +326,7 @@ b {
     .aboutme { 
       /* Holds the section title*/
       padding-top: 4%;
-      background-color: #002b5c;
+      background-color: #203865;
       display: block;
       overflow: auto;
       padding-right: 4%;
@@ -386,19 +378,6 @@ b {
       margin: 0px;
       }
 
-h4 {
-font-family: "Montserrat"; 
-font-size: 16px; 
-color: black;
-text-align: left;
-padding: 0px;
-padding-right: 2%;
-padding-left: 2%;
-padding-bottom: 2%;
-margin: auto;
-margin-bottom: 5%;
-}
-
 img {
   width: 80%;
   height: auto;
@@ -442,7 +421,7 @@ img {
 
 .joinus { 
 /*  padding-top: 90px;*/
-  background-color: #002b5c;
+  background-color: #203865;
   display: block;
   overflow: auto;
   padding-right: 4%;
@@ -451,14 +430,14 @@ img {
 }
 
 .intouch { 
-  background-color: #002b5c;
+  background-color: #203865;
   color: white;
   display: block;
   overflow: auto;
   padding-right: 4%;
   padding-left: 4%;
   margin-top: 0px;
-  padding-top: 0px;
+/*  padding-top: 4%;*/
   padding-bottom: 0px;
   text-align: center;
 }
@@ -476,17 +455,76 @@ img {
 }
 
 #subscribe-box { 
-    float:left; 
+    float:right; 
     width:60%; 
     background-color:transparent; 
     margin:auto;
 } 
 
 #intouch-box { 
-    float:right; 
+    float:left; 
     width: 40%; 
     margin:auto;
     background-color:transparent;  
+}
+
+#footer-logo-box { 
+    float:right; 
+    width: 25%; 
+    margin-right:12%;
+    background-color:transparent;  
+}
+#footer-donate-box { 
+    float:left; 
+    width: 40%; 
+    margin:auto;
+    background-color:transparent;  
+}
+
+
+    #footer-img-box { 
+      /* Holds the image */
+        float:left; 
+        width:30%; 
+        background-color: transparent; 
+        display: flex;
+        height: auto;
+    } 
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #F8F8F8;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 50%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #b5b1b1;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #203865;
+/*  padding: 20px;*/
+
 }
 
 
