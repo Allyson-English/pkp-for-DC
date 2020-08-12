@@ -22,11 +22,6 @@ i {
   background-color: #203865;
 }
 
-b {
-  background-color: transparent;
-  font-weight: 2;
-}
-
 /* NAVIGATION BAR */
 
     .btn-group button {
@@ -273,28 +268,13 @@ b {
     }
 
     .issues { 
-    /*This div is where the navigation scrolls to and holds the header*/
-      background-color: #F8F8F8;
-      display: block;
-      overflow: auto;
-      padding-right: 4%;
-      padding-left: 4%;
-      padding-bottom: 0%;
-      padding-top: 4%;
-      border-style: solid;
-      border-color: #F8F8F8;
-    }
-
-    .nested_issues { 
-      /* This div holds the issue boxes */
-      background-color: #F8F8F8;
-      display: block;
-      overflow: auto;
-      text-align: center;
-      padding-right: 4%;
-      padding-left: 4%;
-      padding-bottom: 4%;
-      padding-top: 4%;
+      /* Holds the section title*/
+  background: #F8F8F8;
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 8%; 
+  height: 100%;
     }
 
 /* The following boxes hold the three focus issues*/
@@ -325,58 +305,33 @@ b {
 
     .aboutme { 
       /* Holds the section title*/
-      padding-top: 4%;
-      background-color: #203865;
-      display: block;
-      overflow: auto;
-      padding-right: 4%;
-      padding-left: 4%;
-      margin-top: 0px;
-      padding-bottom: 0%;
-      text-align: center;
-    }
-
-    .nested_aboutme { 
-      /*Holds the rest of the section */
-      background-color: transparent;
-      display: block;
-      overflow: auto;
-      text-align: center;
-      padding-right: 4%;
-      padding-left: 4%;
-      padding-bottom: 4%;
-      padding-top: 0%;
+  background-color: #203865;
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 8%; 
+  height: 100%;
     }
 
     #img-box { 
       /* Holds the image */
         float:left; 
-        width:30%; 
+/*        width:30%; */
         background-color: transparent; 
         display: flex;
         height: auto;
     } 
 
 
-    #abtme-box { 
-      /*Holds the about me text*/
-        float:left; 
-        width:60%; 
-        background-color:transparent;  
-        margin-left:5%; 
-        margin-right:3%;
-        padding-bottom: 2%;
-    } 
-
-    h6 {
-      /* This is the text that fills the about me box*/
-      font-family: "Montserrat"; 
-      font-size: 16px; 
-      color: white;
-      text-align: left;
-      padding: 0px;
-      margin: 0px;
-      }
+h6 {
+  /* This is the text that fills the about me box*/
+  font-family: "Montserrat"; 
+  font-size: 16px; 
+  color: white;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  }
 
 img {
   width: 80%;
@@ -389,23 +344,14 @@ img {
 
 .ANC { 
   background-color: #F8F8f8;
-  display: block;
   overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-top: 4%;
-  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 8%; 
+  height: 100%;
 }
 
-.ANC_nested { 
-  background-color: #F8F8f8;
-  display: block;
-  overflow: auto;
-  text-align: center;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-bottom: 4%;
-}
+
 
 #anc-box { 
     float:left; 
@@ -413,9 +359,8 @@ img {
     background-color:transparent;  
     display: block;
     overflow: auto;
-    padding-right: 4%;
-    padding-left: 4%;
     text-align: left;
+    padding-bottom: 4%;
 } 
 
 
@@ -431,15 +376,11 @@ img {
 
 .intouch { 
   background-color: #203865;
-  color: white;
-  display: block;
   overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  margin-top: 0px;
-/*  padding-top: 4%;*/
-  padding-bottom: 0px;
-  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 8%; 
+  height: 100%;
 }
 
 
@@ -470,8 +411,8 @@ img {
 
 #footer-logo-box { 
     float:right; 
-    width: 25%; 
-    margin-right:12%;
+    width: 40%; 
+    margin-right:8%;
     background-color:transparent;  
 }
 #footer-donate-box { 
@@ -482,14 +423,31 @@ img {
 }
 
 
-    #footer-img-box { 
-      /* Holds the image */
-        float:left; 
-        width:30%; 
-        background-color: transparent; 
-        display: flex;
-        height: auto;
-    } 
+#footer-img-box { 
+  /* Holds the image */
+    float:left; 
+    width:20%; 
+    background-color: transparent; 
+    display: flex;
+    height: auto;
+} 
+
+
+#footer_leftbox { 
+    float:left; 
+    width:50%; 
+    background-color:transparent; 
+    border:solid transparent; 
+    margin:auto;
+} 
+} 
+#footer_rightbox { 
+    float:right; 
+    width:50%; 
+    margin:auto;
+    background-color:transparent; 
+    border:solid transparent; 
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -541,6 +499,16 @@ input[type=submit]:hover {
 }
 
 .social-icon {
+    color: white;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    background-color: transparent;    
+
+    padding: 0px;
+    border-radius: 3px;
+}
+
+.donate {
     color: white;
     margin-left: 2.5px;
     margin-right: 2.5px;
