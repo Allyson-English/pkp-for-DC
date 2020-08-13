@@ -79,7 +79,7 @@ i {
       font-family: "Montserrat"; 
       font-size: 120%; 
       margin-left: 2.5%;
-      margin-bottom: 1%;
+      margin-bottom: .5%;
       padding: .25%;
       margin-top: .25%;
 
@@ -87,6 +87,7 @@ i {
       display: flex;
       float: left;
       width: 16%;
+      padding-bottom: .05%;
     } 
 
     #nav_2 { 
@@ -102,6 +103,7 @@ i {
       background-color: #F8F8F8;
       float: left;
       margin-top: 3%;
+      padding-bottom: .05%;
     } 
     #nav_3 { 
       background: transparent;
@@ -116,6 +118,7 @@ i {
       background-color: #F8F8F8;
       float: left;
       margin-top: 3%;
+      padding-bottom: .05%;
     }
     #nav_4 { 
       background: transparent;
@@ -130,6 +133,7 @@ i {
       background-color: #F8F8F8;
       float: left;
       margin-top: 3%;
+      padding-bottom: .05%;
     } 
     #nav_5 { 
       background: transparent;
@@ -144,6 +148,7 @@ i {
       background-color: #F8F8F8;
       float: left;
       margin-top: 3%;
+      padding-bottom: .05%;
     }
     #nav_6 { 
       background: transparent;
@@ -158,6 +163,7 @@ i {
       background-color: #F8F8F8;
       float: left;
       margin-top: 3%;
+      padding-bottom: .05%;
     }
 
 
@@ -166,32 +172,43 @@ i {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
+      padding-bottom: .05%;
     }
     a#nav_2:hover, a#nav_2:active
     {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
+      padding-bottom: .05%;
     }
     a#nav_3:hover, a#nav_2:active
     {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
+      padding-bottom: .05%;
     }
     a#nav_4:hover, a#nav_4:active
     {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
+      padding-bottom: .05%;
     }
     a#nav_5:hover, a#nav_5:active
     {
       border-radius: 4px;
       text-decoration: underline;
       padding: .25%;
+      padding-bottom: .05%;
     }
-
+    a#nav_6:hover, a#nav_6:active
+    {
+      border-radius: 4px;
+      text-decoration: underline;
+      padding: .25%;
+      padding-bottom: .05%;
+    }
 
 
 /* This begins << after >> the navigation bar and is closed << after >> the footer */
@@ -243,7 +260,19 @@ i {
     h3 {
       /* Text inside each issue box*/
     font-family: "Montserrat"; 
-    font-size: 140%; 
+    font-size: 130%; 
+    background-color: transparent;
+    color: black;
+    text-align: left;
+    padding: 0px;
+    margin: auto;
+    margin-top: 5%;
+    }
+
+    h4 {
+      /* Text inside each issue box*/
+    font-family: "Montserrat"; 
+    font-size: 160%; 
     background-color: transparent;
     color: black;
     text-align: center;
@@ -296,7 +325,7 @@ i {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8%; 
+  padding-top: 8.5%; 
   height: 100%;
   align-content: space-between;
     }
@@ -337,12 +366,13 @@ i {
 
     .aboutme { 
       /* Holds the section title*/
-  background-color: #203865;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 8%; 
-  height: 100%;
+        background-color: #203865;
+        overflow: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 9%; 
+        padding-bottom: 2%;
+        height:100%;
     }
 
     #img-box { 
@@ -354,6 +384,71 @@ i {
         height: auto;
     } 
 
+        #img-anc { 
+      /* Holds the image */
+        float:left; 
+        width:100%; 
+        background-color: transparent; 
+        display: flex;
+        height: auto;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    } 
+
+
+    #intouch_text { 
+        float:left; 
+        width:40%; 
+        background-color:transparent; 
+        border:solid transparent; 
+        margin:auto;
+        display: inline-block;
+        margin-left: 4%;
+        margin-right: 4%;
+    } 
+    #intouch_email { 
+        float:center; 
+        width:16%; 
+        background-color:transparent;  
+        border:solid transparent; 
+        margin: auto;
+        display: inline-block;
+        margin-right: 4%;
+        margin-left: 5.5%;
+    } 
+    #intouch_twitter { 
+        float:right; 
+        width:16%; 
+        margin:auto;
+        background-color:transparent; 
+        border:solid transparent; 
+        display: inline-block;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+
+#intouch_email:hover, #intouch_email:active {
+        float:center; 
+        width:17%; 
+        background-color:transparent;  
+        border:solid transparent; 
+        margin: auto;
+        display: inline-block;
+        margin-right: 3%;
+        margin-left: 4.5%;
+  }
+
+#intouch_twitter:hover, #intouch_twitter:active {
+        float:center; 
+        width:17%; 
+        background-color:transparent;  
+        border:solid transparent; 
+        margin: auto;
+        display: inline-block;
+        margin-right: 3%;
+        margin-left: 3%;
+  }
 
 h6 {
   /* This is the text that fills the about me box*/
@@ -379,7 +474,7 @@ img {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8%; 
+  padding-top: 8.5%; 
   height: 100%;
 }
 
@@ -411,9 +506,47 @@ img {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8%; 
+  padding-top: 2%; 
   height: 100%;
+  padding-bottom: 2%;
 }
+
+
+.donate { 
+  background-color: #F8F8F8;
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  align-content: space-between;
+  overflow: auto;
+  padding-top: 0%; 
+}
+
+a#donate {
+    font-family: "Montserrat"; 
+    font-size: 100%; 
+    color: white;
+    text-align: left;
+    padding: 2%;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #203865;
+    border-radius: 5%;
+}
+
+
+    a#donate:hover, a#donate:active {
+    font-family: "Montserrat"; 
+    font-size: 100%; 
+    color: white;
+    text-align: left;
+    padding: 2%;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #586b8a;
+    border-radius: 5%;
+    }
 
 
 .subscribe {
@@ -434,17 +567,10 @@ img {
     margin:auto;
 } 
 
-#intouch-box { 
-    float:left; 
-    width: 40%; 
-    margin:auto;
-    background-color:transparent;  
-}
-
 #footer-logo-box { 
     float:right; 
     width: 40%; 
-    margin-right:8%;
+    margin-right:2%;
     background-color:transparent;  
 }
 #footer-donate-box { 
@@ -471,6 +597,9 @@ img {
     background-color:transparent; 
     border:solid transparent; 
     margin:auto;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 0%;
 } 
 } 
 #footer_rightbox { 
@@ -479,6 +608,7 @@ img {
     margin:auto;
     background-color:transparent; 
     border:solid transparent; 
+    margin-top: 0%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -531,16 +661,6 @@ input[type=submit]:hover {
 }
 
 .social-icon {
-    color: white;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    background-color: transparent;    
-
-    padding: 0px;
-    border-radius: 3px;
-}
-
-.donate {
     color: white;
     margin-left: 2.5px;
     margin-right: 2.5px;
@@ -633,7 +753,7 @@ input[type=submit]:hover {
 
       .issues { 
       /* Holds the section title*/
-  background: #F8F8F8;
+  background: #F0F;
   overflow: auto;
   border:solid transparent; 
   margin-left: 2%;
@@ -757,7 +877,7 @@ img {
 
     .intro { 
       /* div that holds the entire section */
-      padding-top: 16%; 
+      padding-top: 18%; 
 
     }
 
