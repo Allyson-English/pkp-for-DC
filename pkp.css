@@ -804,10 +804,15 @@ input[type=submit]:hover {
   overflow: none;
   border:solid transparent; 
   margin: auto;
-  padding-top: 8%; 
+  padding-top: 22%; 
   height: 100%;
   max-width: 100%;
   overflow-x: hidden;
+    }
+
+    .aboutme { 
+      /* Holds the section title*/
+        padding-top: 20%; 
     }
 
 
@@ -1026,6 +1031,14 @@ img {
   margin-left: 67%;
   font-family: "Montserrat"; 
   font-size: 110%; 
+}
+
+.ANC { 
+  padding-top: 22%;
+}
+
+.intouch { 
+  padding-top: 22%;
 }
 
 }
