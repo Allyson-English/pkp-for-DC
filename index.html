@@ -11,19 +11,25 @@
 
 <body>
 
+<!-- Navigation Section -->
     <div class="navigation">
       <div class="btn-group" id="navbar">
         <br/>
-        <span>
-        <a id="nav_1" href="#top"><img src="./logo2.png" class="img_logo" alt="Patrick for DC"></a>
-        <a id="nav_2" href="#issues">Issues</a>
-        <a id="nav_3" href="#aboutme">About Me</a>
-        <a id="nav_4" href="#ANC">What is the ANC?</a>
-        <a id="nav_5" href="#intouch">Get In Touch</a>
-        <a id="nav_6" href="#donate">Donate</a></span>
-        <a id="nav_img"><img src="./nav.png" class="img_nav" alt="Navigation"></a>
-      </div>
-    </div>
+                  <a id="nav_1" href="#top"><img src="./logo2.png" class="img_logo" alt="Patrick for DC"></a>
+                  <a id="nav_2" href="#issues">Issues</a>
+                  <a id="nav_3" href="#aboutme">About Me</a>
+                  <a id="nav_4" href="#ANC">What is the ANC?</a>
+                  <a id="nav_5" href="#intouch">Get In Touch</a>
+                  <a id="nav_6" href="#donate">Donate</a>
+      </div></div>
+
+      <select id="drop_menu" onchange="navigation()">
+      <option value="">Menu</option>
+      <option value="issues">Issues</option>
+      <option value="aboutme">About Me</option>
+      <option value="ANC">What is the ANC?</option>
+      <option value="intouch">Get In Touch</option> 
+      <option value="donate">Donate</option></select><br/>    
 
 <!-- Page Width Starts Here -->
     <div class="pagewidth">
@@ -37,11 +43,11 @@
 <div class="section" style="padding-bottom: 2.5%;">
         <div class = "issues" id="issues">
           <h2 style="padding-top: 1.25%;">Core Issues<br><br></h2>
-                <div id="st-box"><h4>Environment</h4> <br><br><h3>Our neighborhood is rapidly developing with new construction and businesses. I want to ensure that the new buildings going up are at the forefront of environmental sustainability and that we devote adequate resources to incorporating green practices within existing infrastructure.</h3></div> 
+                <div id="st-box"><h4>Environment</h4> <br><br><p>Our neighborhood is rapidly developing with new construction and businesses. I want to ensure that the new buildings going up are at the forefront of environmental sustainability and that we devote adequate resources to incorporating green practices within existing infrastructure.</p></div> 
 
-                <div id="nd-box"><h4>Affordable Housing</h4> <br><br><h3>DC is already an expensive place to live, and costs are continuing to rise, pushing existing residents and vulnerable populations out and keeping new residents from coming in. As ANC Commissioner I want to take steps to ensure that affordable housing is accessible in our community.</h3></div> 
+                <div id="nd-box"><h4>Affordable Housing</h4> <br><br><p>DC is already an expensive place to live, and costs are continuing to rise, pushing existing residents and vulnerable populations out and keeping new residents from coming in. As ANC Commissioner I want to take steps to ensure that affordable housing is accessible in our community.</p></div> 
 
-                <div id="rd-box"><h4>Statehood</h4> <br><br><h3>This is an issue that we need to continue to raise at every level of government. DC Statehood not only means federal representation for DC residents, but also unlocks significant access to federal resources we could use to create positive change for DC residents across our city.</h3></div> 
+                <div id="rd-box"><h4>Statehood</h4> <br><br><p>This is an issue that we need to continue to raise at every level of government. DC Statehood not only means federal representation for DC residents, but also unlocks significant access to federal resources we could use to create positive change for DC residents across our city.</p></div> 
         </div>
 </div>
 
@@ -58,33 +64,29 @@
 <div class="section" style="padding-bottom: 2.5%;">
         <div class = "ANC" id="ANC">
           <h2 style="padding-top: 1.25%;">What is the ANC?</h2>
-        <div id="footer_leftbox">
-                <div id="img-anc">
-                  <img src="./ANC6E.png" alt="Photograph of ANC-6E Map">
-                </div> 
-        </div>  
-        <div id="footer_rightbox">
-          <h3 style="text-align: left; margin-top: 3%;">Washington, DC is divided into eight different wards that are each represented by a member of the city council. Each ward is further subdivided into Advisory Neighborhood Commissions.<br><br> If you live in the Mount Vernon area, like I do, you are most likely part of Ward 6, ANC 6E. Each ANC is further divided into “Single Member Districts,” which each elect one Commissioner to represent them at the ANC. If you live in district 6E05, I am running to represent you. <br><br><a class="social-icon" href="//dcgis.maps.arcgis.com/apps/InformationLookup/index.html?appid=8b54d6b6dc1041f3a4c5de125d7c9580" style="color: black;">You can use this DC government link</a>to verify within which ANC you fall.</h3>
-        </div>   
+              <div id="footer_leftbox">
+                      <div id="img-anc">
+                        <img src="./ANC6E.png" alt="Photograph of ANC-6E Map">
+                      </div> 
+              </div>  
+              <div id="footer_rightbox">
+                <h3 style="text-align: left; margin-top: 3%;">Washington, DC is divided into eight different wards that are each represented by a member of the city council. Each ward is further subdivided into Advisory Neighborhood Commissions.<br><br> If you live in the Mount Vernon area, like I do, you are most likely part of Ward 6, ANC 6E. Each ANC is further divided into “Single Member Districts,” which each elect one Commissioner to represent them at the ANC. If you live in district 6E05, I am running to represent you. <br><br><a class="social-icon" href="//dcgis.maps.arcgis.com/apps/InformationLookup/index.html?appid=8b54d6b6dc1041f3a4c5de125d7c9580" style="color: black;">You can use this DC government link</a>to verify within which ANC you fall.</h3>
+              </div>   
 </div>
 
-<div class = "section" style="background-color: #203865; padding-top: 6%;" id="intouch">
-<div class = "intouch">
-<h2 style="color: white;">Get in Touch<br><br></h2>
-
-                <div id="intouch_text"><h3 style="color: white; text-align: left;">After the election, my goal is to build strong between the community and the ANC to ensure that our neighborhood’s voice is represented on the issues facing our city. If elected, I want to foster a culture in which any resident feels empowered to come to the ANC’s public meetings to express their thoughts and opinions.<br><br> Please get in touch with me, and let’s work on the challenges facing our community together.</h3></div> 
-
-                <div id="intouch_email">
-                  <a class="social-icon" href="mailto:patrick.parlej@gmail.com"><h3 style="color: white; text-align: center;">Click here<br> to send me an email:</h3></a>
-                  <a id="envelope" href="mailto:patrick.parlej@gmail.com"><img src="./envelope.png" alt="Image of Envelope"></a>
-                </div> 
-
-                <div id="intouch_twitter">
-                    <a class="social-icon" href="mailto:patrick.parlej@gmail.com"><h3 style="color: white; text-align: center;">Click here <br>to connect over twitter:</h3></a>
-                  <a id="twitter" href="mailto:patrick.parlej@gmail.com"><img style="width:60%;" src="./twitter.png" alt="Image of Envelope"></a>
-                </div> 
-        </div>   
-  </div>
+<div class="section" style="background-color: #203865;">
+        <div class = "intouch" id="intouch">
+          <h2 style="padding-top: 1.25%; color: white;">Get in Touch</h2>
+              <div id="intouch_leftbox">
+                      <h3 style="text-align: left; color: white;">After the election, my goal is to build strong between the community and the ANC to ensure that our neighborhood’s voice is represented on the issues facing our city. If elected, I want to foster a culture in which any resident feels empowered to come to the ANC’s public meetings to express their thoughts and opinions.<br><br> Please get in touch with me, and let’s work on the challenges facing our community together.</h3>
+              </div>  
+                <div id="comms_images"><h3 style="text-align: center;color: white;">Send Me an Email</h3>
+                  <a href="mailto:patrick.parlej@gmail.com"><img id="envelope" src="./envelope.png" alt="Photograph of ANC Candidate Patrick K. Parlej"></a>
+                  <br><br>
+                  <h3 style="text-align: center;color: white;">Connect on Twitter</h3>
+                  <a href="//twitter.com/AllysonEnglish_"><img id="bird" src="./twitter.png" alt="Photograph of ANC Candidate Patrick K. Parlej"></a></div>
+                </div>
+</div>
 </div>
 
 <div class="section">
@@ -112,7 +114,6 @@
             </div><!-- 1:ICONS -->
 </div>
 
-
-
 </body>
+<script src="./pkp.js"></script>
 </html>
