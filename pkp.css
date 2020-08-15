@@ -290,6 +290,7 @@ i {
     padding-right: 2%;
     padding-left: 2%;
     padding-bottom: 2%;
+    padding-top: 2%;
     margin: auto;
     margin-bottom: 5%;
     justify-content: 
@@ -511,8 +512,8 @@ img {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 9%;
-  height: auto;
-  padding-bottom: 4%;
+/*  height: auto;*/
+  padding-bottom: 2%;
 }
 
 
@@ -527,6 +528,7 @@ img {
   padding-top: 0%; 
 }
 
+
 a#donate {
     font-family: "Montserrat"; 
     font-size: 100%; 
@@ -536,7 +538,7 @@ a#donate {
     margin: auto;
     margin-bottom: 5%;
     background-color: #203865;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 
@@ -548,8 +550,10 @@ a#donate {
     padding: 2%;
     margin: auto;
     margin-bottom: 5%;
-    background-color: #586b8a;
+    background-color: #203865;
     border-radius: 5%;
+    border-style: solid;
+    border-color: #203865;
     }
 
 
@@ -632,10 +636,15 @@ a#donate {
     margin:auto;
     background-color:transparent; 
     border:solid transparent; 
-    margin-top: 4%;
     margin-left: 6%;
     height: 100%;
     text-align: center;
+}
+
+
+a#email {
+  color: white;
+  text-decoration: none;
 }
 
 #envelope {
@@ -759,22 +768,6 @@ input[type=submit]:hover {
     background-color: #f0f;
 }
 
-.fa-spotify:hover {
-    background-color: #1db954;
-}
-
-.fa-reddit:hover {
-    background-color: #ff5700;
-}
-
-.fa-medium:hover {
-    background-color: #00ab6c;
-}
-
-.fa-telegram:hover {
-    background-color: #0088cc;
-}
-
 @media only screen and (max-width: 1272px) {
 
   #nav_2 { 
@@ -793,7 +786,38 @@ input[type=submit]:hover {
     margin-left: 4%;
   }
 
+
+#footer_rightbox { 
+    float:left; 
+/*    width:100%; 
+    margin-left: 0%;*/
 }
+
+#footer-logo-box { 
+    float:left; 
+    width: 80%; 
+    margin-left:51%;
+/*    background-color:transparent;  */
+}
+#footer-donate-box { 
+    float:left; 
+/*    width: 80%; */
+/*    margin:auto;
+    background-color:transparent;  */
+}
+
+
+#footer-img-box { 
+/*   Holds the image */
+    float:left; 
+/*    width:60%; */
+/*    background-color: transparent; 
+    display: flex;
+    height: auto;*/
+} 
+
+}
+
 
 
 @media only screen and (max-width: 900px) {
@@ -1040,5 +1064,52 @@ img {
 .intouch { 
   padding-top: 22%;
 }
+
+#footer_leftbox { 
+    float:center; 
+    width:100%; 
+    padding-top: 0%;
+} 
+
+.donate { 
+  background-color: #F8F8F8;
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  align-content: space-between;
+  overflow: auto;
+  padding-top: 0%; 
+}
+
+#footer_rightbox { 
+    float:left; 
+/*    width:100%; 
+    margin-left: 0%;*/
+}
+
+#footer-logo-box { 
+    float:left; 
+    width: 80%; 
+    margin-left:19%;
+/*    background-color:transparent;  */
+}
+#footer-donate-box { 
+    float:left; 
+/*    width: 80%; */
+/*    margin:auto;
+    background-color:transparent;  */
+}
+
+
+#footer-img-box { 
+/*   Holds the image */
+    float:left; 
+/*    width:60%; */
+/*    background-color: transparent; 
+    display: flex;
+    height: auto;*/
+} 
+
 
 }
