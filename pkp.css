@@ -309,8 +309,10 @@ i {
       text-decoration: none;
       display: inline-block;
       font-size: 150%;
-      margin: 2% 6%;
       cursor: pointer;
+      margin-top: 5%;
+      margin-left: 2%;
+      margin-bottom: 6%;
     }
 
 
@@ -326,7 +328,7 @@ i {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8.5%; 
+  padding-top: 5%; 
   height: 100%;
     }
 
@@ -370,7 +372,7 @@ i {
         overflow: auto;
         margin-left: 10%;
         margin-right: 10%;
-        padding-top: 9%; 
+        padding-top: 4%; 
         padding-bottom: 2%;
         height:100%;
     }
@@ -478,7 +480,7 @@ img {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8.5%; 
+  padding-top: 5%; 
   padding-bottom: 0%;
   height: 100%;
 }
@@ -511,7 +513,7 @@ img {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 9%;
+  padding-top: 5%;
 /*  height: auto;*/
   padding-bottom: 2%;
 }
