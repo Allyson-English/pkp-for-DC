@@ -650,22 +650,22 @@ a#email {
 }
 
 #envelope {
-  width: 20%;
+  width: 15%;
   height: auto;
 }
 
     #envelope:hover, a#envelope:active {
-    width: 25%;
+    width: 20%;
     height: auto;
     }
 
 #bird {
-  width: 20%;
+  width: 15%;
   height: auto;
 }
 
     #bird:hover, a#bird:active {
-    width: 25%;
+    width: 20%;
     height: auto;
     }
 
