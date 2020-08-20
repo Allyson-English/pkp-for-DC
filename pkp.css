@@ -707,40 +707,52 @@ input[type=submit]:hover {
 
 
 /* Footer */
-.footer-social-icons {
+.footer {
     background-color: transparent;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 3px;
+/*    padding-top: 15px;
+    padding-bottom: 3px;*/
+    width: 100%;
+    padding: 1%;
+    margin: 2.5%;
     display: flex;
     flex-direction: row;
     margin: auto;
-    justify-content: center;
-}
-
-.social-icon {
+/*    justify-content: center;*/
     color: white;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    background-color: transparent;    
-
-    padding: 0px;
-    border-radius: 3px;
+    font-family: "Montserrat";
+    font-size: 30%;
 }
 
-#icon {
-
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 6px;
-    padding-left: 6px;
-    border-radius: 3px;
+.rightsreserved {
+    background-color: transparent;
+/*    width: 100%;*/
+/*    padding-top: 15px;
+    padding-bottom: 3px;*/
+    padding-left: 75%;
+    padding-right: 3%;
+/*    padding: 1%;
+    margin: 2.5%;
+    display: flex;*/
+    text-align: right;
+/*    flex-direction: row;*/
+    /*justify-content: left;*/
+    color: white;
+    margin: auto;
+    font-family: "Montserrat";
+    font-size: 30%;
 }
 
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
+.madebyAE {
+    padding-left: 3%;
+    background-color: transparent;
+    margin: auto;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 30%;
 }
+
+
 
 .fa-instagram:hover {
     color: #fff;
@@ -830,7 +842,7 @@ input[type=submit]:hover {
   overflow: none;
   border:solid transparent; 
   margin: auto;
-  padding-top: 22%; 
+  padding-top: 10%; 
   height: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -838,7 +850,7 @@ input[type=submit]:hover {
 
     .aboutme { 
       /* Holds the section title*/
-        padding-top: 20%; 
+        padding-top: 4%; 
     }
 
 
@@ -1004,7 +1016,7 @@ img {
   overflow: auto;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 8.5%; 
+  padding-top: 2%; 
   height: 100%;
   padding-bottom: 12%;
 }
@@ -1060,17 +1072,18 @@ img {
 }
 
 .ANC { 
-  padding-top: 22%;
+  padding-top: 12%;
 }
 
 .intouch { 
-  padding-top: 22%;
+  padding-top: 12%;
 }
 
 #footer_leftbox { 
     float:center; 
     width:100%; 
     padding-top: 0%;
+    margin-bottom: 2%;
 } 
 
 .donate { 
@@ -1081,26 +1094,23 @@ img {
   height: 100%;
   align-content: space-between;
   overflow: auto;
-  padding-top: 0%; 
+  padding-top: 4%; 
 }
 
 #footer_rightbox { 
-    float:left; 
-/*    width:100%; 
-    margin-left: 0%;*/
+/*  align-content: center;*/
+  justify-content: center;
+  width:100%; 
+  margin: 0%;
 }
 
 #footer-logo-box { 
-    float:left; 
-    width: 80%; 
-    margin-left:19%;
-/*    background-color:transparent;  */
+margin-right: 20%;
+margin-left: 20%;
+  width: 60%; 
 }
 #footer-donate-box { 
     float:left; 
-/*    width: 80%; */
-/*    margin:auto;
-    background-color:transparent;  */
 }
 
 
@@ -1112,6 +1122,14 @@ img {
     display: flex;
     height: auto;*/
 } 
+
+a#donate {
+    margin-bottom: 1%;
+}
+
+    a#donate:hover, a#donate:active {
+    margin-bottom: 1%;
+    }
 
 
 }
