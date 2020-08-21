@@ -3,47 +3,32 @@
 /* But sections appear the order they appear on the page moving from top to bottom */
 
 
-
-
-/*When margin isn't set to zero, a small line appears on the left hand side of the screen like everything has slight padding*/
-
-body {
-  margin: 0%;
-}
-
 /*Scroll behavior coherently brings the page up or down to the correct spot*/
 /*The HTML background color maintains a consistent color ever if someone on a mac scrolls up or down the page too far*/
-html {
+html, body {
   scroll-behavior: smooth;
   background-color: #F8F8F8;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0%; /* This gets rid of a small line that appears on the left hand side of the screen, like everything has slight padding */
 }
 
-i {
-  background-color: #203865;
+/* Transparent Navigation ID Holder to make sure header doesn't block text when using navigation buttons */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
 }
 
 /* NAVIGATION BAR */
 
-    .btn-group button {
-      background-color: #F8F8F8;
-      border: transparent; /* Transparent border */
-      color: black; /* Black text */
-     /* padding: 10px 50px;*/ /* Some padding */
-      cursor: pointer; /* Pointer/hand icon */
-      float: center; /* Float the buttons side by side */
-      font-family: "Fjord One"; 
-    /*  font-size: 100%; */
-    }
+    /* On desktop, navigation bar remains fixed at the top of the screen */
+    /* Click the logo will bring the user back to the top of the page */
+    /* Clicking other navigation buttons will bring the user to the section indicated*/
 
-    /* Add underline on hover */
-    .btn-group button:hover {
-      text-decoration: underline;
-    }
-
-    .navigation { /* container where site navigation buttons sit */
-/*      padding-top: 20px;
-      padding-bottom: 20px;*/
-    /*  font-size: 42;*/
+    .navigationbar { /* container where site navigation buttons sit */
       text-align: center;
       color: black;
       z-index: 1;
@@ -52,222 +37,180 @@ i {
       width: 100%;
       background-color: #F8F8F8;
       overflow: hidden;
+      padding-top: 1%;
     }
 
-    .img_logo {
-      width: 100%;
-      height: auto;
-      margin: 0%;
-      padding: 0%;
-      margin-right: 0%;
+    .nav-btns button {
+      color: black; 
+      cursor: pointer;
+      float: center; 
+      font-family: "Fjord One"; 
     }
 
-    .img_nav {
-      display: none;
-    }
-
-    #nav_img { 
-      display: none;
+    /* Add underline on hover */
+    .nav-btns button:hover {
+      text-decoration: underline;
     }
 
     #nav_1 { 
-      background: transparent;
-      border-radius: 4%;
       color: black;
-      text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
-      font-family: "Montserrat"; 
-      font-size: 120%; 
       margin-left: 2.5%;
       margin-bottom: .5%;
       padding: .25%;
       margin-top: .25%;
-
-      background-color: #F8F8F8;
-      display: flex;
       float: left;
       width: 16%;
       padding-bottom: .05%;
     } 
 
+    .img_logo {
+      width: 100%;
+      height: auto;
+    }
+
     #nav_2 { 
-      background: transparent;
-      border-radius: 4px;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 6%;
-      padding: .25%;
-      background-color: #F8F8F8;
       float: left;
+      margin-left: 6%;
       margin-top: 3%;
+      padding: .25%;
       padding-bottom: .05%;
     } 
     #nav_3 { 
-      background: transparent;
-      border-radius: 4px;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
-      padding: .25%;
-      background-color: #F8F8F8;
       float: left;
+      margin-left: 8%;
       margin-top: 3%;
+      padding: .25%;
       padding-bottom: .05%;
     }
     #nav_4 { 
-      background: transparent;
-      border-radius: 4px;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
-      padding: .25%;
-      background-color: #F8F8F8;
       float: left;
+      margin-left: 8%;
       margin-top: 3%;
+      padding: .25%;
       padding-bottom: .05%;
     } 
     #nav_5 { 
-      background: transparent;
-      border-radius: 4px;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
-      padding: .25%;
-      background-color: #F8F8F8;
       float: left;
+      margin-left: 8%;
       margin-top: 3%;
+      padding: .25%;
       padding-bottom: .05%;
     }
     #nav_6 { 
-      background: transparent;
-      border-radius: 4px;
       color: black;
       text-decoration: none;
       cursor: pointer; /* Pointer/hand icon */
       font-family: "Montserrat"; 
       font-size: 120%; 
-      margin-left: 8%;
-      padding: .25%;
-      background-color: #F8F8F8;
       float: left;
+      margin-left: 8%;
       margin-top: 3%;
+      padding: .25%;
       padding-bottom: .05%;
     }
 
 
     a#nav_1:hover, a#nav_1:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
     a#nav_2:hover, a#nav_2:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
     a#nav_3:hover, a#nav_2:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
     a#nav_4:hover, a#nav_4:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
     a#nav_5:hover, a#nav_5:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
     a#nav_6:hover, a#nav_6:active
     {
-      border-radius: 4px;
       text-decoration: underline;
-      padding: .25%;
-      padding-bottom: .05%;
     }
 
 
-/* This begins << after >> the navigation bar and is closed << after >> the footer */
+
+/* This begins << after >> the navigation bar and is closed << before >> the footer */
 .pagewidth { 
-  /* width of content box remains the same, even when zoomed in or out (note that the text still spreads out as the page grows) */
-  width: 100%;
+  width: 100%; /* Width of content box should remain the same despite zoom level */
   background-color: #203865;
 }
 
-/* INTRO SECTION 'HI IM PATRICK */
+/* INTRO SECTION 'HI IM PATRICK' */
 
-
-    .intro { 
-      /* div that holds the entire section */
-      background-color: #203865;
-      overflow: auto;
+    .intro-header { 
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 8%; 
-      height: 100%;
+      padding-top: 10%; 
+      padding-bottom: 2.5%;
     }
 
+        #hello {
+        font-family: "Montserrat"; 
+        font-size: 400%; 
+        color: white;
+        }
 
-    h1 {
-    font-family: "Montserrat"; 
-    font-size: 400%; 
-    background-color: #203865;
-    color: white;
+        #personal_statement {
+        font-family: "Montserrat"; 
+        font-size: 300%; 
+        color: white;
+        text-align: left;
+        padding-top: 4.5%;
+        }
+
+        #why_im_running {
+        font-family: "Montserrat"; 
+        font-size: 150%; 
+        color: white;
+        text-align: left;
+        padding-top: 4.5%;
+        }
+      
+        .learnmore {
+      /* learn more button at the bottom of the section*/
+      font-family: "Montserrat"; 
+      border-style: solid;
+      color: white;
+      padding: 1% 5%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 150%;
+      cursor: pointer;
+      margin-top: 5%;
+      margin-left: 2%;
+      margin-bottom: 6%;
     }
 
-   h2 {
-      /* Text for sections:
-      - I'm running for the Mount Vernon ANC...
-      - Core Issues
-      - Why Am I Running 
-      - What is the Advisory Neighborhood Commission
-      - Get in Touch 
-       some specifications (including color, alignment and padding above/ below are unique to each section, defined in HTML
-       spacing above is controlled with padding, spacing below is controlled with line breaks*/
-    font-family: "Montserrat"; 
-    font-size: 300%; 
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    margin: auto;
-    padding-top: 4.5%;
-    }
-
-    h3 {
-      /* Text inside each issue box*/
-    font-family: "Montserrat"; 
-    font-size: 130%; 
-    background-color: transparent;
-    color: black;
-    text-align: left;
-    padding: 0px;
-    margin: auto;
-    margin-top: 5%;
-    }
 
     h4 {
       /* Text inside each issue box*/
@@ -296,175 +239,310 @@ i {
     justify-content: 
     }
 
-
-    .learnmore {
-      /* learn more button at the bottom of the section*/
-      font-family: "Montserrat"; 
-      background-color: #203865;
-      border-color: white;
-      border-style: solid;
-      color: white;
-      padding: 1% 5%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 150%;
-      cursor: pointer;
-      margin-top: 5%;
-      margin-left: 2%;
-      margin-bottom: 6%;
-    }
-
-
 /* CORE ISSUES SECTION */
 
-    .section {
-      background-color: #F8F8F8;
+    .grayband_section {
+      background-color: #F8F8F8; /* sets background of section to gray rather than blue*/
     }
 
     .issues { 
       /* Holds the section title*/
-  background: #F8F8F8;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 5%; 
-  height: 100%;
+      background: #F8F8F8;
+      overflow: auto;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 5%; 
+      height: 100%;
     }
 
-/* The following boxes hold the three focus issues*/
-    #st-box { 
-        float:left; 
-        width:24%; 
-        background-color:transparent; 
-        border:solid transparent; 
-        margin:auto;
-        display: inline-block;
-        margin-left: 4%;
-        margin-right: 4%;
-    } 
-    #nd-box { 
-        float:center; 
-        width:24%; 
-        background-color:transparent;  
-        border:solid transparent; 
-        margin: auto;
-        display: inline-block;
-        margin-right: 4%;
-        margin-left: 5.5%;
-    } 
-    #rd-box { 
-        float:right; 
-        width:24%; 
-        margin:auto;
-        background-color:transparent; 
-        border:solid transparent; 
-        display: inline-block;
-        margin-right: 4%;
-        margin-left: 4%;
+    #core_issues {
+      font-family: "Montserrat"; 
+      font-size: 300%; 
+      background-color: transparent;
+      color: black;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 5%;
     }
 
-    /* Why am I running for office section*/
+    /* The following boxes hold the three focus issues*/
+        #env-box { 
+            float:left; 
+            width:24%; 
+            display: inline-block;
+            margin-left: 4%;
+            margin-right: 4%;
+        } 
+        #afh-box { 
+            float:center; 
+            width:24%; 
+            display: inline-block;
+            margin-right: 4%;
+            margin-left: 5.5%;
+        } 
+        #st-box { 
+            float:right; 
+            width:24%; 
+            display: inline-block;
+            margin-right: 4%;
+            margin-left: 4%;
+        }
+
+/* ABOUT ME SECTION */
 
     .aboutme { 
       /* Holds the section title*/
-        background-color: #203865;
         overflow: auto;
         margin-left: 10%;
         margin-right: 10%;
-        padding-top: 4%; 
         padding-bottom: 2%;
+        padding-top: 5%;
         height:100%;
     }
 
-    #img-box { 
-      /* Holds the image */
-        float:left; 
-/*        width:30%; */
-        background-color: transparent; 
-        display: flex;
-        height: auto;
-    } 
+      #whyimrunning {
+        font-family: "Montserrat"; 
+        font-size: 300%; 
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding-top: 4.5%;
+      }
+
+      #img-abtme { 
+        /* Holds the image */
+          float:left; 
+          width:28%; 
+          background-color: transparent; 
+          display: flex;
+          height: auto;
+          margin-bottom: 2%;
+          margin-top: 2%;
+      } 
+
+      #whyme_paragraph {
+        font-family: "Montserrat"; 
+        font-size: 130%; 
+        background-color: transparent;
+        color: white;
+        text-align: left;
+        margin: auto;
+        padding-top: 4.5%;
+        margin-top: 3%;
+      }
+
+
+/* What is the ANC Section */
+
+      .ANC { 
+        overflow: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 5%; 
+        padding-bottom: 4%;
+        padding-left: 0%;
+        padding-top: 5%;
+        height: 100%;
+      }
+
+        #whatisANC {
+          font-family: "Montserrat"; 
+          font-size: 300%; 
+          background-color: transparent;
+          color: black;
+          text-align: center;
+          margin: auto;
+          padding-top: 1.25%;
+        }
+
 
         #img-anc { 
-      /* Holds the image */
-        float:left; 
-        width:100%; 
-        background-color: transparent; 
-        display: flex;
+          float:left; 
+          width:50%; 
+          background-color: transparent; 
+          display: inline-block;
+          height: auto;
+          margin-left: 0%;
+          margin-top: 5%;
+          } 
+
+        #anc_textbox { 
+          float:left; 
+          width:46%; 
+          background-color: transparent; 
+          display: inline-block;
+          height: auto;
+          margin-left: 2%;
+          text-align: left; 
+          margin-top: 3%;
+
+          font-family: "Montserrat"; 
+          font-size: 130%; 
+
+          color: black;
+          } 
+
+
+/* Get in Touch Seection */
+
+        .intouch { 
+          overflow: auto;
+          margin-left: 10%;
+          margin-right: 10%;
+          padding-top: 5%;
+          padding-bottom: 2%;
+        }
+
+        #getintouch {
+          font-family: "Montserrat"; 
+          font-size: 300%; 
+          background-color: transparent;
+          color: white;
+          text-align: center;
+          margin: auto;
+          padding-top: 1.25%;
+        }
+
+        #outreach_statement {
+          float:left; 
+          width:50%; 
+          margin:auto;
+          text-align: left;
+          margin-bottom: 5%;
+          margin-top: 5%;
+          font-family: "Montserrat"; 
+          font-size: 125%; 
+          color: white;
+          padding: 0px;
+        }
+
+        #outreach_symbols {
+            float:left; 
+            width:40%; 
+            margin-top: 2.5%;
+            margin-left: 6%;
+            text-align: center;
+            font-family: "Montserrat"; 
+            font-size: 125%; 
+            color: white;
+            padding: 0px;
+        }
+
+
+        a#contact_links {
+          color: white;
+          text-decoration: none;
+        }
+
+        #envelope {
+          width: 15%;
+          height: auto;
+          padding-bottom: 2.5%;
+          padding-top: 2.5%;
+        }
+
+        #envelope:hover, a#envelope:active {
+        width: 20%;
         height: auto;
-        margin-bottom: 10%;
-        margin-top: 10%;
-    } 
+        padding-bottom: 0%;
+        padding-top: 0%;
+        }
+
+        #bird {
+          width: 15%;
+          height: auto;
+          padding-bottom: 2.5%;
+          padding-top: 2.5%;
+        }
+
+        #bird:hover, a#bird:active {
+        width: 20%;
+        height: auto;
+        padding-bottom: 0%;
+        padding-top: 0%;
+        }
 
 
-    #intouch_text { 
-        float:left; 
-        width:40%; 
-        background-color:transparent; 
-        border:solid transparent; 
-        margin:auto;
-        display: inline-block;
-        margin-left: 4%;
-        margin-right: 4%;
-    } 
 
-    #intouch_buttons {
-        float:center; 
-        width:32%; 
-        background-color:transparent;  
-        border:solid transparent; 
-        margin: auto;
-        display: inline-block;
-        margin-right: 4%;
-        margin-left: 4%;
-    }
+/* Donate Section */
+
+        .donate { 
+          overflow: auto;
+          margin-left: 10%;
+          margin-right: 10%;
+          padding-bottom: 4%;
+          padding-top: 1%;
+          height: 100%;
+        }
 
 
-    #intouch_emailbutton {
-    font-family: "Montserrat"; 
-    font-size: 100%; 
-    color: black;
-    text-align: left;
-    padding: 2%;
-    margin: auto;
-    margin-bottom: 5%;
-    background-color: #F8F8F8;
-    border-radius: 5%;
-    }
+        #excited {
+          font-family: "Montserrat"; 
+          font-size: 300%; 
+          color: black;
+          text-align: center;
+          margin: auto;
+          margin-bottom: 2.5%;
+          padding-top: 2.5%;
+        }
 
+        #fundingstatement {
+          float:left; 
+          width:50%; 
+          margin:auto;
+          text-align: left;
+          margin-bottom: 0%;
+          margin-top: 5%;
+          font-family: "Montserrat"; 
+          font-size: 125%; 
+          color: black;
+          padding: 0px;
+        }
 
-#intouch_email:hover, #intouch_email:active {
-        float:center; 
-        width:17%; 
-        background-color:transparent;  
-        border:solid transparent; 
-        margin: auto;
-        display: inline-block;
-        margin-right: 3%;
-        margin-left: 4.5%;
-  }
+        #logobox {
+            float:left; 
+            width:40%; 
+            margin-top: 2.5%;
+            margin-left: 10%;
+            text-align: center;
+            font-family: "Montserrat"; 
+            font-size: 125%; 
+            color: white;
+            padding: 0%;
+        }
 
-#intouch_twitter:hover, #intouch_twitter:active {
-        float:center; 
-        width:17%; 
-        background-color:transparent;  
-        border:solid transparent; 
-        margin: auto;
-        display: inline-block;
-        margin-right: 3%;
-        margin-left: 3%;
-  }
+        #click_donate {
+          font-family: "Montserrat"; 
+          font-size: 100%; 
+          color: white;
+          text-align: center;
+          margin: 0%;
+          padding-bottom: 1%;
+          padding-top: 1%;
+          background-color: #203865;
 
-h6 {
-  /* This is the text that fills the about me box*/
-  font-family: "Montserrat"; 
-  font-size: 16px; 
-  color: white;
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-  }
+          margin-bottom: 2%;
+          margin-right: 42%;
+          margin-left: 42%;
+          text-decoration: none;
+        }
+
+        #click_donate:hover,  #click_donate:active,{
+          font-family: "Montserrat"; 
+          font-size: 100%; 
+          color: black;
+          text-align: center;
+          margin: auto;
+          padding-bottom: 5%;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        a#donatehere {
+          color: white;
+          text-decoration: none;
+        }
 
 img {
   width: 80%;
@@ -475,268 +553,28 @@ img {
   padding-top: 0px;
 }
 
-.ANC { 
-  background-color: #F8F8f8;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 5%; 
-  padding-bottom: 0%;
-  height: 100%;
-}
 
-
-
-#anc-box { 
-    float:left; 
-    width:90%; 
-    background-color:transparent;  
-    display: block;
-    overflow: auto;
-    text-align: left;
-    padding-bottom: 4%;
-} 
-
-
-.joinus { 
-/*  padding-top: 90px;*/
-  background-color: #203865;
-  display: block;
-  overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-bottom: 4%;
-}
-
-.intouch { 
-  background-color: #203865;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 5%;
-/*  height: auto;*/
-  padding-bottom: 2%;
-}
-
-
-.donate { 
-  background-color: #F8F8F8;
-  overflow: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 100%;
-  align-content: space-between;
-  overflow: auto;
-  padding-top: 0%; 
-}
-
-
-a#donate {
-    font-family: "Montserrat"; 
-    font-size: 100%; 
-    color: white;
-    text-align: left;
-    padding: 2%;
-    margin: auto;
-    margin-bottom: 5%;
-    background-color: #203865;
-    border-radius: 2%;
-}
-
-
-    a#donate:hover, a#donate:active {
-    font-family: "Montserrat"; 
-    font-size: 100%; 
-    color: white;
-    text-align: left;
-    padding: 2%;
-    margin: auto;
-    margin-bottom: 5%;
-    background-color: #203865;
-    border-radius: 5%;
-    border-style: solid;
-    border-color: #203865;
-    }
-
-
-.subscribe {
-  background-color: transparent;
-  font-family: "Montserrat"; 
-  display: block;
-  overflow: auto;
-  padding-right: 4%;
-  padding-left: 4%;
-  padding-bottom: 4%;
-  text-align: left;
-}
-
-#subscribe-box { 
-    float:right; 
-    width:60%; 
-    background-color:transparent; 
-    margin:auto;
-} 
-
-#footer-logo-box { 
-    float:right; 
-    width: 40%; 
-    margin-right:2%;
-    background-color:transparent;  
-}
-#footer-donate-box { 
-    float:left; 
-    width: 40%; 
-    margin:auto;
-    background-color:transparent;  
-}
-
-
-#footer-img-box { 
-  /* Holds the image */
-    float:left; 
-    width:20%; 
-    background-color: transparent; 
-    display: flex;
-    height: auto;
-} 
-
-
-#footer_leftbox { 
-    float:left; 
-    width:50%; 
-    background-color:transparent; 
-    border:solid transparent; 
-    margin:auto;
-    text-align: left;
-    margin-bottom: 5%;
-    margin-top: 0%;
-} 
-
-#intouch_leftbox { 
-    float:left; 
-    width:50%; 
-    background-color:transparent; 
-    border:solid transparent; 
-    margin:auto;
-    text-align: left;
-    margin-bottom: 5%;
-    margin-top: 0%;
-} 
-} 
-#footer_rightbox { 
-    float:right; 
-    width:50%; 
-    margin:auto;
-    background-color:transparent; 
-    border:solid transparent; 
-    margin-top: 0%;
-}
-
-#comms_images { 
-    float:left; 
-    width:40%; 
-    margin:auto;
-    background-color:transparent; 
-    border:solid transparent; 
-    margin-left: 6%;
-    height: 100%;
-    text-align: center;
-}
-
-
-a#email {
-  color: white;
-  text-decoration: none;
-}
-
-#envelope {
-  width: 15%;
-  height: auto;
-}
-
-    #envelope:hover, a#envelope:active {
-    width: 20%;
-    height: auto;
-    }
-
-#bird {
-  width: 15%;
-  height: auto;
-}
-
-    #bird:hover, a#bird:active {
-    width: 20%;
-    height: auto;
-    }
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #F8F8F8;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 50%;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #b5b1b1;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #203865;
-/*  padding: 20px;*/
-
-}
 
 
 /* Footer */
 .footer {
-    background-color: transparent;
-    width: 100%;
-/*    padding-top: 15px;
-    padding-bottom: 3px;*/
+    background-color: #203865;
     width: 100%;
     padding: 1%;
     margin: 2.5%;
     display: flex;
     flex-direction: row;
     margin: auto;
-/*    justify-content: center;*/
     color: white;
     font-family: "Montserrat";
     font-size: 30%;
+    overflow: none;
 }
 
 .rightsreserved {
-    background-color: transparent;
-/*    width: 100%;*/
-/*    padding-top: 15px;
-    padding-bottom: 3px;*/
     padding-left: 75%;
     padding-right: 3%;
-/*    padding: 1%;
-    margin: 2.5%;
-    display: flex;*/
     text-align: right;
-/*    flex-direction: row;*/
-    /*justify-content: left;*/
     color: white;
     margin: auto;
     font-family: "Montserrat";
@@ -752,35 +590,11 @@ input[type=submit]:hover {
     font-size: 30%;
 }
 
+        a#attributionlink {
+          color: white;
+          text-decoration: none;
+        }
 
-
-.fa-instagram:hover {
-    color: #fff;
-    vertical-align: middle;
-    background-color: #d6249f;
-    background: radial-gradient(circle at 30% 107%,
-        #fdf497 0%,
-        #fdf497 5%,
-        #fd5949 45%,
-        #d6249f 60%,
-        #285aeb 90%);
-}
-
-.fa-twitter:hover {
-    background-color: #00aced;
-}
-
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
-
-.fa-github:hover {
-    background-color: #5a32a3;
-}
-
-.fa-envelope:hover {
-    background-color: #f0f;
-}
 
 @media only screen and (max-width: 1272px) {
 
@@ -799,39 +613,6 @@ input[type=submit]:hover {
   #nav_6 { 
     margin-left: 4%;
   }
-
-
-#footer_rightbox { 
-    float:left; 
-/*    width:100%; 
-    margin-left: 0%;*/
-}
-
-#footer-logo-box { 
-    float:left; 
-    width: 80%; 
-    margin-left:51%;
-/*    background-color:transparent;  */
-}
-#footer-donate-box { 
-    float:left; 
-/*    width: 80%; */
-/*    margin:auto;
-    background-color:transparent;  */
-}
-
-
-#footer-img-box { 
-/*   Holds the image */
-    float:left; 
-/*    width:60%; */
-/*    background-color: transparent; 
-    display: flex;
-    height: auto;*/
-} 
-
-}
-
 
 
 @media only screen and (max-width: 900px) {
@@ -1117,10 +898,6 @@ margin-left: 20%;
 #footer-img-box { 
 /*   Holds the image */
     float:left; 
-/*    width:60%; */
-/*    background-color: transparent; 
-    display: flex;
-    height: auto;*/
 } 
 
 a#donate {
