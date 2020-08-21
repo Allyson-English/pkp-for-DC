@@ -13,17 +13,20 @@
 <body>
 
 <!-- Navigation Section -->
-    <div class="navigation">
-      <div class="btn-group" id="navbar">
-        <br/>
-                  <a id="nav_1" href="#top"><img src="./logo2.png" class="img_logo" alt="Patrick for DC"></a>
-                  <a id="nav_2" href="#issues">Issues</a>
-                  <a id="nav_3" href="#aboutme">About Me</a>
-                  <a id="nav_4" href="#ANC">What is the ANC?</a>
-                  <a id="nav_5" href="#intouch">Get In Touch</a>
-                  <a id="nav_6" href="#donate">Donate</a>
-      </div></div>
 
+      <!-- Desktop -->
+      <div class="navigationbar">
+        <div class="nav-btns" id="navbar">
+                    <a id="nav_1" href="#top"><img src="./logo2.png" class="img_logo" alt="Patrick for DC Logo"></a>
+                    <a id="nav_2" href="#issues">Issues</a>
+                    <a id="nav_3" href="#aboutme">About Me</a>
+                    <a id="nav_4" href="#ANC">What is the ANC?</a>
+                    <a id="nav_5" href="#intouch">Get In Touch</a>
+                    <a id="nav_6" href="#donate">Donate</a>
+        </div>
+      </div>
+
+      <!-- Mobile devices/ smaller screens -->
       <select id="drop_menu" onchange="navigation()">
       <option value="menu">Menu</option>
       <option value="home">Home</option>
@@ -31,95 +34,120 @@
       <option value="aboutme">About Me</option>
       <option value="ANC">What is the ANC?</option>
       <option value="intouch">Get In Touch</option> 
-      <option value="donate">Donate</option></select><br/>    
+      <option value="donate">Donate</option></select>    
 
-<!-- Page Width Starts Here -->
+<!-- Page width is set here Here -->
     <div class="pagewidth">
-        <div class = "intro">
-          <h1>Hi, I'm Patrick.</h1><h2 style="color: white; text-align: left; padding-top: 1.25%;">I'm running for the Mount Vernon Triangle Advisory Neighborhood Commission (ANC).</h2>
-          <h3 style="color: white; text-align: left; margin-top: 3%;">I want to be an advocate for our community in this time of uncertainty in our politics. I’m someone who believes deeply in democracy and that real change happens at the local level. I hope to use this platform to make a positive difference in our neighborhood.</h3>
 
-         <a href="#issues" class="learnmore" id="issues">Learn More</a>
+<!-- Intro Section (Hi, I'm Patrick) -->
+        <div class = "intro-header"><a class="anchor" id="top"></a>
+            <div id="hello">Hi I'm Patrick</div>
+            <div id="personal_statement">I'm running for the Mount Vernon Triangle Advisory Neighborhood Commission (ANC).</div>
+            <div id="why_im_running">I want to be an advocate for our community in this time of uncertainty in our politics. I’m someone who believes deeply in democracy and that real change happens at the local level. I hope to use this platform to make a positive difference in our neighborhood.</div>
+
+           <a href="#issues" class="learnmore" id="this">Learn More</a>
         </div>
 
-<div class="section" style="padding-bottom: 2.5%;">
-        <div class = "issues">
-          <h2 style="padding-top: 1.25%;">Core Issues<br><br></h2>
-                <div id="st-box"><h4>Environment</h4> <br><br><p>Our neighborhood is rapidly developing with new construction and businesses. I want to ensure that the new buildings going up are at the forefront of environmental sustainability and that we devote adequate resources to incorporating green practices within existing infrastructure. Washington, DC has the potential to be one of the most environmentally-conscious places in the world, and we have a chance to contribute to that effort within our neighborhood. </p></div> 
+<!-- Core Issues Section -->
+    <div class="grayband_section">
 
-                <div id="nd-box"><h4>Affordable Housing</h4> <br><br><p>DC is already an expensive place to live, and costs are continuing to rise, pushing existing residents and vulnerable populations out and high costs keeping potential new residents from coming in. A lack of supply of affordable housing in our city at a time when new businesses continue to expand into our area means increases in housing costs for residents in our neighborhood and communities across the city.  As we consider new developments in our neighborhood, we need to keep focus on how those developments affect an already tenuous affordable housing situation. </p></div> 
+        <div class = "issues"><a class="anchor" id="issues"></a>
+          <div id="core_issues">Core Issues</div>
 
-                <div id="rd-box"><h4>Statehood</h4> <br><br><p>This is an issue that we need to continue to raise at every level of government. DC Statehood not only means meaningful federal representation for DC residents, but also unlocks significant access to federal resources we could use to create positive change for DC residents across our city. For example, in the case of the city’s response to COVID-19, DC has been limited in its ability to respond to the pandemic by federal-imposed rules and regulations – underscoring the need for action on statehood. </p></div> 
+                <div id="env-box"><h4>Environment</h4> <br><br><p>Our neighborhood is rapidly developing with new construction and businesses. I want to ensure that the new buildings going up are at the forefront of environmental sustainability and that we devote adequate resources to incorporating green practices within existing infrastructure. Washington, DC has the potential to be one of the most environmentally-conscious places in the world, and we have a chance to contribute to that effort within our neighborhood. </p></div> 
 
-<div class="section" style="padding-bottom: 2.5%; background-color: transparent;" id="aboutme"></div>      
+                <div id="afh-box"><h4>Affordable Housing</h4> <br><br><p>DC is already an expensive place to live, and costs are continuing to rise, pushing existing residents and vulnerable populations out and high costs keeping potential new residents from coming in. A lack of supply of affordable housing in our city at a time when new businesses continue to expand into our area means increases in housing costs for residents in our neighborhood and communities across the city.  As we consider new developments in our neighborhood, we need to keep focus on how those developments affect an already tenuous affordable housing situation. </p></div> 
+
+                <div id="st-box"><h4>Statehood</h4> <br><br><p>This is an issue that we need to continue to raise at every level of government. DC Statehood not only means meaningful federal representation for DC residents, but also unlocks significant access to federal resources we could use to create positive change for DC residents across our city. For example, in the case of the city’s response to COVID-19, DC has been limited in its ability to respond to the pandemic by federal-imposed rules and regulations – underscoring the need for action on statehood. </p></div> 
+
         </div>
-</div>
 
-<div class="section" style="padding-bottom: 2.5%; background-color: #203865;">
-        <div class = "aboutme">
-          <h2 style="color: white;">Here's Why I'm Running<br></h2>
-                <div id="img-box">
-                  <img src="./philosopherking.jpeg" alt="Photograph of ANC Candidate Patrick K. Parlej">
-                </div> 
-          <h3 style="text-align: left; margin-top: 3%; color: white;">I’m the son of two immigrants who came to the United States in search of better life. I’m motivated by the deep values that our country strives for, though I acknowledge that we have a ways to go to attain full justice and equality for all. That’s why I’m running. <br><br>Local politics may seem less exciting than the national scene. After all, an ANC Commissioner focuses on things like things like street infrastructure and zoning. But history has shown time and again that real political change starts from the bottom up.</h3>
+    </div>
 
-<div class="section" style="padding-bottom: 2.5%; background-color: transparent;" id="ANC"></div>   
-        </div>
-</div>
+<!-- About Me Section -->
 
-<div class="section" style="padding-bottom: 2.5%;">
-        <div class = "ANC">
-          <h2 style="padding-top: 1.25%;">What is the ANC?</h2>
-              <div id="footer_leftbox">
-                      <div id="img-anc">
-                        <img src="./ANC6E.png" alt="Photograph of ANC-6E Map">
-                      </div> 
-              </div>  
-              <div id="footer_rightbox">
-                <h3 style="text-align: left; margin-top: 3%;">Washington, DC is divided into eight different wards that are each represented by a member of the city council. Each ward is further subdivided into Advisory Neighborhood Commissions, which are non-partisan volunteer positions whose job it is to make recommendations to the city government on the way forward on hyperlocal issues: everything from zoning and housing to street infrastructure. <br><br>If you live in the Mount Vernon area, like I do, you are most likely part of Ward 6, ANC 6E. Each ANC is further divided into “Single Member Districts,” which each elect one Commissioner to represent them at the ANC. If you live in district 6E05, I am running to represent you.
- <br><br><a class="social-icon" href="//dcgis.maps.arcgis.com/apps/InformationLookup/index.html?appid=8b54d6b6dc1041f3a4c5de125d7c9580" style="color: black;">You can use this DC government link</a>to verify within which ANC you fall.</h3>
+        <div class = "aboutme"><a class="anchor" id="aboutme"></a>
 
- <div class="section" style="padding-bottom: 2.5%; background-color: transparent;" id="intouch"></div> 
-              </div>   
-</div>
+            <div id="whyimrunning">Here's Why I'm Running</div>
 
-<div class="section" style="background-color: #203865;">
-        <div class = "intouch">
-          <h2 style="padding-top: 1.25%; color: white;">Get in Touch</h2>
-              <div id="intouch_leftbox">
-                      <h3 style="text-align: left; color: white;">My goal is to build strong relationship between the community and the ANC to ensure that our neighborhood’s voice is represented on the issues facing our city. I want to foster a culture in which any resident feels empowered to come to the ANC’s public meetings to express their thoughts and opinions. <br><br>Please get in touch with me, and let’s work on the challenges facing our community together.</h3>
-              </div>  
-                <div id="comms_images"><h3 style="text-align: center;color: white; padding-top: 0%;"><a id=email href="mailto:PatrickForANC@gmail.com">Click Here to Send Me an Email</h3><img id="envelope" src="./envelope.png" alt="Envelope"><h3 style="text-align: center;color: white; margin-top: .5%;">or send a messsage to<br>PatrickForANC@gmail.com</h3></a>
-                <h3 style="text-align: center;color: white;">Connect on Twitter</h3>
-                <a href="//twitter.com/PatrickForANC"><img id="bird" src="./twitter.png" alt="Twitter logo"></a></div>
+                  <div id="img-abtme"><img src="./candidate.jpeg" alt="Photograph of ANC Candidate Patrick K. Parlej"></div> 
 
-                  <br>
+                <div id="whyme_paragraph">I’m the son of two immigrants who came to the United States in search of better life. I’m motivated by the deep values that our country strives for, though I acknowledge that we have a ways to go to attain full justice and equality for all. That’s why I’m running. <br><br>Local politics may seem less exciting than the national scene. After all, an ANC Commissioner focuses on things like things like street infrastructure and zoning. But history has shown time and again that real political change starts from the bottom up.
                 </div>
-</div>
-</div>
 
-<div class="section" style="padding-bottom: 2%;" id="donate">
-  <div class="donate">
-  <h2 style="padding-top:2%">Excited About This Campaign?<br><br></h2>
-            <div id="footer_leftbox">
-              <h3 style="margin-top:2%">This campaign is a grassroots effort. If you believe in the kind of change we have articulated and want to support it, you can make a contribution at the link below. Perhaps even more importantly, I also invite you to join me in getting involved in our community. Together, we can make a difference.</h3>
-              <h3 style="text-align: center;"><a id="donate" href="//secure.actblue.com/donate/patrickforanc#">Click Here to Donate</a></h3>
-            </div>  
-            
-            <div id="footer_rightbox">
-              <div id="footer-logo-box">
-                <img src="./logo2.png" class="footer-img-box" alt="Patrick for DC"><br><br>
-              </div>
-            </div>  
+        </div>
+
+<!-- What is the ANC Section -->
+
+<div class="grayband_section">
+
+  <div class = "ANC"><a class="anchor" id="ANC"></a>
+
+                  <div id="whatisANC">What is the ANC?</div>
+
+                  <div id="img-anc">
+                    <img src="./ANC6E.png" alt="Photograph of ANC-6E05 Map">
+                  </div>
+
+                  <div id="anc_textbox">
+                    Washington, DC is divided into eight different wards that are each represented by a member of the city council. Each ward is further subdivided into Advisory Neighborhood Commissions, which are non-partisan volunteer positions whose job it is to make recommendations to the city government on the way forward on hyperlocal issues: everything from zoning and housing to street infrastructure. <br><br>If you live in the Mount Vernon area, like I do, you are most likely part of Ward 6, ANC 6E. Each ANC is further divided into “Single Member Districts,” which each elect one Commissioner to represent them at the ANC. If you live in district 6E05, I am running to represent you.<br><br>
+
+                      <a class="social-icon" href="//dcgis.maps.arcgis.com/apps/InformationLookup/index.html?appid=8b54d6b6dc1041f3a4c5de125d7c9580" style="color: black;">You can use this DC government link </a>to verify within which ANC you fall.
+                  </div>   
   </div>
 </div>
+
+<!-- Get in Touch Section -->
+
+<div class = "intouch"><a class="anchor" id="intouch"></a>
+                      <div id="getintouch">Get in Touch</div>
+
+                      <div id="outreach_statement">
+                      My goal is to build strong relationship between the community and the ANC to ensure that our neighborhood’s voice is represented on the issues facing our city. I want to foster a culture in which any resident feels empowered to come to the ANC’s public meetings to express their thoughts and opinions. <br><br>Please get in touch with me, and let’s work on the challenges facing our community together.
+                      </div>  
+
+                      <div id="outreach_symbols">
+                      <a id=contact_links href="mailto:PatrickForANC@gmail.com">Click Here to Send Me an Email<img id="envelope" src="./envelope.png" alt="Envelope">or send a messsage to<br>PatrickForANC@gmail.com</a><br><br>
+                      Connect on Twitter
+                      <a href="//twitter.com/PatrickForANC"><img id="bird" src="./twitter.png" alt="Twitter logo"></a>
+                      </div>
+</div>
+
+<!-- Donate -->
+
+<div class="grayband_section">
+  <div class="donate"><a class="anchor" id="donate"></a>
+
+              <div id="excited">Excited About This Campaign?</div>
+
+              <div id="fundingstatement">
+                This campaign is a grassroots effort. If you believe in the kind of change we have articulated and want to support it, you can make a contribution at the link below. Perhaps even more importantly, I also invite you to join me in getting involved in our community. Together, we can make a difference.</div>
+           
+            
+              <div id="logobox">
+                  <a href="//secure.actblue.com/donate/patrickforanc#">
+                    <img src="./logo2.png" class="footer-img-box" alt="Patrick for DC">
+                  </a>
+              </div>
+  </div>
+
+              <a id="donatehere" href="//secure.actblue.com/donate/patrickforanc#"><div id="click_donate">Click Here to Donate</div></a>
+
+</div>
+
+<!-- Closes page background -->
+</div>
+
+<!-- Footer  -->
+
 <div class="footer">
-            <div class="madebyAE"> <!-- 0:ICONS -->
-                <a style="color: white;" href="//allysonenglish.io/professional">Made By AE.</a>
-            </div><!-- 1:ICONS -->
-            <div class="rightsreserved"> <!-- 0:ICONS -->
-                All Rights Reserved®
-            </div><!-- 1:ICONS -->
+                <div class="madebyAE"> 
+                    All Rights Reserved®
+                </div>
+                <div class="rightsreserved"> 
+                    <a id="attributionlink" href="//allysonenglish.io/professional">Made By AE.</a>
+                </div>
+
 </div>
 </div>
 
