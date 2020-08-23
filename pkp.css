@@ -11,6 +11,9 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0%; /* This gets rid of a small line that appears on the left hand side of the screen, like everything has slight padding */
+  justify-content: center;
+  margin: auto;
+  width: 1500px; 
 }
 
 /* Transparent Navigation ID Holder to make sure header doesn't block text when using navigation buttons */
@@ -38,6 +41,9 @@ a.anchor {
       background-color: #F8F8F8;
       overflow: hidden;
       padding-top: 1%;
+      justify-content: center;
+      margin: auto;
+      width: 1500px; 
     }
 
     .nav-btns button {
@@ -618,6 +624,8 @@ img {
     margin-left: 4%;
   }
 
+
+
 @media only screen and (max-width: 900px) {
 
   img {
@@ -638,6 +646,21 @@ img {
       padding-bottom: 2%;
       height: auto;
       z-index: 0;
+    }
+
+      .navigationbar { /* container where site navigation buttons sit */
+      text-align: center;
+      color: black;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #F8F8F8;
+      overflow: hidden;
+      padding-top: 1%;
+      justify-content: center;
+      margin: auto;
+      width: 100%; 
     }
 
 #drop_menu {
