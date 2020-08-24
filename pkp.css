@@ -665,11 +665,11 @@ img {
 
 #drop_menu {
   width: 30%;
-  border: 2.5px solid black;
-  background: #203865;
+  border: 2.5px solid transparent;
+  background: transparent;
   z-index: 1;
   float: right;
-  color: white;
+  color: black;
   position: fixed;
   margin-top: 4%;
   margin-left: 67%;
