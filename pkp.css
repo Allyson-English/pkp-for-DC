@@ -642,6 +642,11 @@ img {
 
 
 @media only screen and (max-width: 900px) {
+  
+html, body {
+  overflow-x: hidden;
+  width: 100%; 
+}
 
   img {
   width: 100%;
