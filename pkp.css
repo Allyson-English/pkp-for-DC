@@ -890,6 +890,8 @@ a.anchor {
       .ANC {
         padding-bottom: 8%;
         padding-top: 8%;
+        overflow-x: hidden;
+        max-width: 100%;
       }
 
         #whatisANC {
