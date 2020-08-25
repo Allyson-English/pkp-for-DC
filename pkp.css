@@ -652,6 +652,12 @@ img {
   padding-top: 0px;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
 
 
 /* Style The Dropdown Button */
@@ -701,32 +707,32 @@ img {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #b0bbd1}
+.dropdown-content a:target {background-color: #b0bbd1}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:target .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdown:target .dropbtn {
   background-color: transparent;
 }
 
 
 
-/*    .navigation { 
-      /* container where site navigation buttons sit */
-/*      text-align: center;
+   .navigation { 
+      container where site navigation buttons sit 
+      text-align: center;
       color: black;
       width: 100%;
       background-color: #F8F8F8;
       padding-bottom: 2%;
       height: auto;
       z-index: 0;
-    }*/
+    }
 
-/*#drop_menu {
+#drop_menu {
   width: 30%;
   border: 2.5px solid transparent;
   background: transparent;
@@ -738,7 +744,7 @@ img {
   margin-left: 67%;
   font-family: "Montserrat"; 
   font-size: 110%; 
-}*/
+}
 
         #nav_1 { 
       width: 30%;
@@ -746,7 +752,7 @@ img {
     } 
 
 /*Scroll button upper right corder or mobile*/
-/*    .img_nav {
+    .img_nav {
       width: 100%;
       height: auto;
       margin: 0%;
@@ -762,7 +768,7 @@ img {
       z-index: -1;
       display: inline-block;
       float: right;
-    }*/
+    }
 
 /*Hide navigation buttons on mobile becasue of drop down menu*/
 
@@ -813,10 +819,14 @@ img {
     .issues { 
       /* Holds the section title*/
       padding-top: 15%; 
+      overflow-x: hidden;
+      max-width: 100%;
     }
 
     #core_issues {
-      font-size: 290%; 
+      font-size: 290%;
+      overflow-x: hidden;
+      max-width: 100%;
     }
 
     /* The following boxes hold the three focus issues*/
@@ -859,14 +869,15 @@ img {
 
       #img-abtme { 
         /* Holds the image */
-          width:45%; 
-          padding-right: 5%;
+/*          width:45%; 
+          padding-right: 5%;*/
+          display: none;
       } 
 
       #whyme_paragraph {
         font-size: 110%; 
         padding-top: 6%;
-        margin-top: 3%;
+        margin-top: 1%;
       }
 
 /* What is the ANC */
@@ -895,6 +906,8 @@ img {
         .intouch { 
           padding-bottom: 8%;
           padding-top: 5%;
+          overflow-x: hidden;
+          max-width: 100%;
         }
 
         #getintouch {
