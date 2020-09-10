@@ -229,6 +229,12 @@ a.anchor {
       margin-right: 10%;
       padding-top: 6%; 
       height: 100%;
+      color: white;
+      font-family: "Montserrat"; 
+      font-size: 100%;
+      text-align: justify;
+      padding-right: 2%;
+      padding-left: 2%;
     }
 
     #core_issues {
