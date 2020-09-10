@@ -213,7 +213,7 @@ a.anchor {
       font-size: 150%;
       cursor: pointer;
       margin-top: 5%;
-      margin-bottom: 6%;
+      margin-bottom: 5%;
     }
 
 /* CORE ISSUES SECTION */
@@ -224,7 +224,6 @@ a.anchor {
 
     .issues { 
       /* Holds the section title*/
-      background: #F8F8F8;
       overflow: auto;
       margin-left: 10%;
       margin-right: 10%;
@@ -236,7 +235,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 300%; 
       background-color: transparent;
-      color: black;
+      color: white;
       text-align: center;
       margin: auto;
       margin-bottom: 4%;
@@ -273,26 +272,11 @@ a.anchor {
     font-family: "Montserrat"; 
     font-size: 160%; 
     background-color: transparent;
-    color: black;
+    color: white;
     text-align: center;
     padding: 0px;
     margin: auto;
     margin-top: 5%;
-    }
-
-    p {
-    font-family: "Montserrat"; 
-    font-size: 100%; 
-    color: black;
-    text-align: left;
-    padding: 0px;
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    margin: auto;
-    margin-bottom: 5%;
-    justify-content: 
     }
 
 /* ABOUT ME SECTION */
@@ -311,7 +295,7 @@ a.anchor {
         font-family: "Montserrat"; 
         font-size: 300%; 
         background-color: transparent;
-        color: white;
+        color: black;
         text-align: center;
         margin: auto;
         padding-top: 0%;
@@ -332,7 +316,7 @@ a.anchor {
         font-family: "Montserrat"; 
         font-size: 130%; 
         background-color: transparent;
-        color: white;
+        color: black;
         text-align: left;
         margin: auto;
         padding-top: 0%;
@@ -747,19 +731,37 @@ a.anchor {
   border: 2.5px solid transparent;
   background: transparent;
   z-index: 1;
-  float: right;
+/*  float: right;*/
   color: black;
   position: fixed;
   margin-top: 4%;
-  margin-left: 67%;
+  margin-left: 75%;
   font-family: "Montserrat"; 
   font-size: 110%; 
 }
 
         #nav_1 { 
-      width: 30%;
+      width: 35%;
       height: auto;
     } 
+
+#why_im_running {
+  display: none;
+}
+
+        .learnmore {
+      /* learn more button at the bottom of the section*/
+      font-family: "Montserrat"; 
+      border-style: solid;
+      padding: 1% 5%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 150%;
+      cursor: pointer;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
 
 /*Scroll button upper right corder or mobile*/
     .img_nav {
@@ -824,13 +826,21 @@ a.anchor {
         padding-top: 6%;
         }
 
-/* Core Issues */
+/* Mobile Core Issues */
 
     .issues { 
       /* Holds the section title*/
-      padding-top: 15%; 
       overflow-x: hidden;
       max-width: 100%;
+      color: white;
+      font-family: "Montserrat"; 
+      font-size: 100%;
+      text-align: justify;
+      padding-right: 2%;
+      padding-left: 2%;
+      margin-bottom: 10%;
+      margin-top: 10%;
+
     }
 
     #core_issues {
@@ -847,9 +857,8 @@ a.anchor {
             margin-right: 0%;
             overflow: none;
             padding-left: 2%;
-            padding-right: 2%;  
+            padding-right: 2%; 
           } 
-
         #afh-box { 
             float:left; 
             width:100%; 
@@ -872,6 +881,12 @@ a.anchor {
 
 
 /* About Me Section */
+
+    .aboutme { 
+      /* Holds the section title*/
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
 
       #whyimrunning {
         font-size: 290%; 
