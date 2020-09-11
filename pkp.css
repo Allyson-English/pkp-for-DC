@@ -21,7 +21,7 @@ html, body {
 a.anchor {
     display: block;
     position: relative;
-    top: -170px;
+    top: -175px;
     visibility: hidden;
 }
 
@@ -175,7 +175,7 @@ a.anchor {
     .intro-header { 
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 10%; 
+      padding-top: 12%; 
       padding-bottom: 2.5%;
     }
 
@@ -307,27 +307,28 @@ a.anchor {
         padding-top: 0%;
       }
 
-      #img-abtme { 
-        /* Holds the image */
-          float:left; 
-          width:28%; 
-          background-color: transparent; 
-          display: flex;
-          height: auto;
-          margin-bottom: 0%;
-          margin-top: 2%;
-      } 
-
-      #whyme_paragraph {
-        font-family: "Montserrat"; 
-        font-size: 130%; 
-        background-color: transparent;
-        color: black;
-        text-align: left;
-        margin: auto;
-        padding-top: 0%;
-        margin-top: 2%;
+      #mobile_img-abtme {
+        display: none;
       }
+
+        #img-abtme { 
+          /* Holds the image */
+            float:left; 
+            width:24%; 
+            display: inline-block;
+            margin-right: 4%;
+            margin-bottom: 4%;
+            margin-top: 3%;
+        } 
+        #whyme_paragraph { 
+            font-family: "Montserrat"; 
+            font-size: 130%; 
+            float:center; 
+            width:70%;
+            text-align: justify; 
+            display: inline-block;
+            margin-top: 3%;
+        } 
 
 
 /* What is the ANC Section */
@@ -353,32 +354,22 @@ a.anchor {
           padding-top: 1.25%;
         }
 
-
         #img-anc { 
-          float:left; 
-          width:50%; 
-          background-color: transparent; 
-          display: inline-block;
-          height: auto;
-          margin-left: 0%;
-          margin-top: 5%;
-          } 
-
+            float:left; 
+            width:40%; 
+            display: inline-block;
+            margin-top: 3%;
+            margin-bottom: 5%;
+        } 
         #anc_textbox { 
-          float:left; 
-          width:46%; 
-          background-color: transparent; 
-          display: inline-block;
-          height: auto;
-          margin-left: 2%;
-          text-align: left; 
-          margin-top: 3%;
-
-          font-family: "Montserrat"; 
-          font-size: 130%; 
-
-          color: black;
-          } 
+            font-family: "Montserrat"; 
+            font-size: 130%; 
+            float:center; 
+            width:55%; 
+            display: inline-block;
+            margin-top: 3%;
+            margin-left: 5%;
+        } 
 
 
 /* Get in Touch Seection */
@@ -548,7 +539,7 @@ a.anchor {
         }
 
 img {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: flex;
   margin: auto;
@@ -722,7 +713,7 @@ a.anchor {
 
 
    .navigation { 
-      container where site navigation buttons sit 
+/*      container where site navigation buttons sit */
       text-align: center;
       color: black;
       width: 100%;
@@ -750,10 +741,6 @@ a.anchor {
       width: 35%;
       height: auto;
     } 
-
-#why_im_running {
-  display: none;
-}
 
         .learnmore {
       /* learn more button at the bottom of the section*/
@@ -828,8 +815,10 @@ a.anchor {
         }
 
         #why_im_running {
-        font-size: 110%; 
+        font-size: 150%; 
         padding-top: 6%;
+        padding-bottom: 8%;
+        text-align: justify; 
         }
 
 /* Mobile Core Issues */
@@ -893,23 +882,36 @@ a.anchor {
         padding-bottom: 10%;
         padding-top: 10%;
     }
-
+/*
       #whyimrunning {
         font-size: 290%; 
-      }
+      }*/
+        #mobile_img-abtme { 
+          /* Holds the image */
+            float:left; 
+            width:100%; 
+            display: inline-block;
+            margin-right: 4%;
+            margin-bottom: 4%;
+            padding-bottom: 8%;
+            margin-top: 8%;
+        } 
 
-      #img-abtme { 
-        /* Holds the image */
-/*          width:45%; 
-          padding-right: 5%;*/
-          display: none;
-      } 
 
-      #whyme_paragraph {
-        font-size: 110%; 
-        padding-top: 6%;
-        margin-top: 1%;
-      }
+        #img-abtme { 
+          /* Holds the image */
+            display:none;
+        } 
+        #whyme_paragraph { 
+            font-family: "Montserrat"; 
+            font-size: 130%; 
+            float:center; 
+            width:100%;
+            text-align: justify; 
+            display: inline-block;
+            margin-top: 3%;
+            padding-top: 8%;
+        } 
 
 /* What is the ANC */
 
@@ -925,12 +927,36 @@ a.anchor {
           padding-top: 8%;
         }
 
+/*        #img-anc { 
+            float:left; 
+            width:40%; 
+            display: inline-block;
+            margin-top: 3%;
+            margin-bottom: 5%;
+        } 
+        #anc_textbox { 
+            font-family: "Montserrat"; 
+            font-size: 130%; 
+            float:center; 
+            width:55%; 
+            display: inline-block;
+            margin-top: 3%;
+            margin-left: 5%;
+        } */
+
         #img-anc { 
-          display: none;
+            float:left; 
+            width:100%; 
+            display: inline-block;
+            margin: 0%;
+            margin-top: 5%;
+            margin-bottom: 5%;
           } 
 
         #anc_textbox { 
-          width:100%; 
+          width:95%; 
+          margin: 0%;
+          text-align: justify;
           padding-top: 5%;
           } 
 
@@ -949,11 +975,15 @@ a.anchor {
         }
 
         #outreach_statement {
+          text-align: justify;
           width: 100%; 
         }
 
         #outreach_symbols {
-            width:100%; 
+          align-content: center;
+          margin: 0%;
+          padding: 0%;
+          width:100%; 
         }
 
         #envelope {
@@ -989,6 +1019,7 @@ a.anchor {
         }
 
         #fundingstatement {
+          text-align: justify;
           width:100%; 
           font-size: 125%;
         }
@@ -1000,8 +1031,10 @@ a.anchor {
         }
 
         #click_donate {
+          text-align: center;
           width: 40%;
-          margin-left: 33%;
+          margin-left: 30%;
+          padding: 2%;
         }
 
 
