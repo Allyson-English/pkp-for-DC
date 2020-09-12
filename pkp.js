@@ -18,9 +18,13 @@ function navigation() {
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function show_dropdown() {
-  document.getElementById("myDropdown").style.display = "block";
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
-
 
 function hide_dropdown() {
   document.getElementById("myDropdown").style.display = "none";
