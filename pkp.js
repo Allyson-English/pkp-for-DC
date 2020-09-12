@@ -13,3 +13,15 @@ function navigation() {
    else if (document.getElementById("drop_menu").value === 'donate') {
    	location.hash = "donate";}
 };
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function show_dropdown() {
+  document.getElementById("myDropdown").style.display = "block";
+}
+
+
+function hide_dropdown() {
+  document.getElementById("myDropdown").style.display = "none";
+}
