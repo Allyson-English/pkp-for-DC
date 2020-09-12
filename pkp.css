@@ -656,8 +656,8 @@ a.anchor {
   float: right;
   z-index: 10;
   align-content: right;
-  top:10px;
-  right: 10px;
+  top:2%;
+  right: 2%;
 /*  margin-left: 60%;*/
 }
 
@@ -669,7 +669,7 @@ a.anchor {
   cursor: pointer;
   float: right;
   margin-right: 10%;
-  padding-top: 10%;
+  padding-top: 2%;
 /*  z-index: 1;*/
 }
 
