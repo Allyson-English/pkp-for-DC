@@ -21,7 +21,7 @@ html, body {
 a.anchor {
     display: block;
     position: relative;
-    top: -175px;
+    top: -170px;
     visibility: hidden;
 }
 
@@ -342,7 +342,7 @@ a.anchor {
         padding-top: 5%; 
         padding-bottom: 4%;
         padding-left: 0%;
-        padding-top: 5%;
+        padding-top: 4%;
         height: 100%;
       }
 
@@ -353,7 +353,6 @@ a.anchor {
           color: black;
           text-align: center;
           margin: auto;
-          padding-top: 1.25%;
         }
 
         #img-anc { 
@@ -371,6 +370,7 @@ a.anchor {
             display: inline-block;
             margin-top: 3%;
             margin-left: 5%;
+            text-align: justify;
         } 
 
 
@@ -646,7 +646,7 @@ html, body {
 a.anchor {
     display: block;
     position: relative;
-    top: -120px;
+    top: -100px;
     visibility: hidden;
 }
 
@@ -797,7 +797,6 @@ a.anchor {
     }
         #hello {
         font-size: 310%;
-        color: white; 
         }
 
         #personal_statement {
@@ -827,7 +826,7 @@ a.anchor {
       padding-right: 2%;
       padding-left: 2%;
       margin-bottom: 10%;
-      margin-top: 10%;
+/*      margin-top: 10%;*/
       line-height: 1.5;
     }
 
@@ -835,6 +834,7 @@ a.anchor {
       font-size: 290%;
       overflow-x: hidden;
       max-width: 100%;
+      padding-top: 6%;
     }
 
     /* The following boxes hold the three focus issues*/
@@ -873,7 +873,7 @@ a.anchor {
     .aboutme { 
       /* Holds the section title*/
         padding-bottom: 10%;
-        padding-top: 10%;
+        padding-top: 6%;
     }
 /*
       #whyimrunning {
@@ -911,32 +911,15 @@ a.anchor {
 
       .ANC {
         padding-bottom: 8%;
-        padding-top: 8%;
+        padding-top: 6%;
       overflow-x: hidden;
       max-width: 100%;
       }
 
         #whatisANC {
           font-size: 290%; 
-          padding-top: 8%;
+          padding-top: 4%;
         }
-
-/*        #img-anc { 
-            float:left; 
-            width:40%; 
-            display: inline-block;
-            margin-top: 3%;
-            margin-bottom: 5%;
-        } 
-        #anc_textbox { 
-            font-family: "Montserrat"; 
-            font-size: 130%; 
-            float:center; 
-            width:55%; 
-            display: inline-block;
-            margin-top: 3%;
-            margin-left: 5%;
-        } */
 
         #img-anc { 
             float:left; 
@@ -960,14 +943,14 @@ a.anchor {
 
         .intouch { 
           padding-bottom: 8%;
-          padding-top: 5%;
+          padding-top: 6%;
           overflow-x: hidden;
           max-width: 100%;
         }
 
         #getintouch {
           font-size: 290%; 
-          padding-top: 8%;
+          padding-top: 6%;
         }
 
         #outreach_statement {
