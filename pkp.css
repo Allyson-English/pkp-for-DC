@@ -175,7 +175,7 @@ a.anchor {
     .intro-header { 
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 12%; 
+      padding-top: 6%; 
       padding-bottom: 2.5%;
     }
 
@@ -222,8 +222,18 @@ a.anchor {
       background-color: #F8F8F8; /* sets background of section to gray rather than blue*/
     }
 
+    #core_issues {
+       /* Holds the section title*/
+      font-family: "Montserrat"; 
+      font-size: 300%; 
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 4%;
+    }
+
     .issues { 
-      /* Holds the section title*/
       overflow: auto;
       margin-left: 10%;
       margin-right: 10%;
@@ -232,19 +242,9 @@ a.anchor {
       color: white;
       font-family: "Montserrat"; 
       font-size: 100%;
-      text-align: justify;
+      text-align: center;
       padding-right: 2%;
       padding-left: 2%;
-    }
-
-    #core_issues {
-      font-family: "Montserrat"; 
-      font-size: 300%; 
-      background-color: transparent;
-      color: white;
-      text-align: center;
-      margin: auto;
-      margin-bottom: 4%;
     }
 
     /* The following boxes hold the three focus issues*/
@@ -816,7 +816,7 @@ a.anchor {
         font-size: 150%; 
         padding-top: 6%;
         padding-bottom: 8%;
-        text-align: justify; 
+        text-align: left; 
         }
 
 /* Mobile Core Issues */
@@ -828,7 +828,7 @@ a.anchor {
       color: white;
       font-family: "Montserrat"; 
       font-size: 100%;
-      text-align: justify;
+      text-align: center;
       padding-right: 2%;
       padding-left: 2%;
       margin-bottom: 10%;
