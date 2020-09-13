@@ -187,18 +187,19 @@ a.anchor {
 
         #personal_statement {
         font-family: "Montserrat"; 
-        font-size: 150%; 
+        font-size: 250%; 
         color: white;
         text-align: left;
-        padding-top: 4.5%;
+        padding-top: 3%;
+        line-height: 1.5;
         }
 
         #why_im_running {
         font-family: "Montserrat"; 
-        font-size: 120%; 
+        font-size: 150%; 
         color: white;
         text-align: left;
-        padding-top: 4.5%;
+        padding-top: 3%;
         line-height: 1.5;
         }
       
@@ -238,7 +239,7 @@ a.anchor {
       overflow: auto;
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 6%; 
+      padding-top: 4%; 
       height: 100%;
       color: white;
       font-family: "Montserrat"; 
@@ -294,7 +295,7 @@ a.anchor {
         margin-left: 10%;
         margin-right: 10%;
         padding-bottom: 5%;
-        padding-top: 6%;
+        padding-top: 4%;
         height:100%;
     }
 
@@ -795,20 +796,22 @@ a.anchor {
 /*      padding-bottom: 2.5%;*/
     }
         #hello {
-        font-size: 310%; 
+        font-size: 310%;
+        color: white; 
         }
 
         #personal_statement {
-        font-size: 210%; 
+        font-size: 200%; 
         padding-top: 6%;
+        line-height: 1.2;
         }
 
         #why_im_running {
-        font-size: 150%; 
-        padding-top: 6%;
+        font-size: 130%; 
+        padding-top: 5%;
         padding-bottom: 8%;
         text-align: left; 
-        line-height: 1.2;
+        line-height: 1.5;
         }
 
 /* Mobile Core Issues */
