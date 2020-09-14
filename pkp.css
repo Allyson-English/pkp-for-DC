@@ -398,7 +398,7 @@ a.anchor {
           float:left; 
           width:50%; 
           margin:auto;
-          text-align: left;
+          text-align: justify;
           margin-bottom: 5%;
           margin-top: 5%;
           font-family: "Montserrat"; 
@@ -481,7 +481,7 @@ a.anchor {
           float:left; 
           width:50%; 
           margin:auto;
-          text-align: left;
+          text-align: justify;
           margin-bottom: 0%;
           margin-top: 5%;
           font-family: "Montserrat"; 
