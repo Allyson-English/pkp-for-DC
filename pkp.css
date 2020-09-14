@@ -31,17 +31,16 @@ a.anchor {
     /* Click the logo will bring the user back to the top of the page */
     /* Clicking other navigation buttons will bring the user to the section indicated*/
 
-    .navigationbar { /* container where site navigation buttons sit */
+    .navigationbar {
+     /* container where site navigation buttons sit */
       text-align: center;
-      color: black;
+      color: red;
       z-index: 1;
       position: fixed;
       top: 0;
       width: 100%;
       background-color: #F8F8F8;
       overflow: hidden;
-      padding-top: 1%;
-      justify-content: center;
       margin: auto;
       width: 1500px; 
     }
@@ -82,7 +81,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 120%; 
       float: left;
-      margin-left: 6%;
+      margin-left: 8%;
       margin-top: 3%;
       padding: .25%;
       padding-bottom: .05%;
@@ -94,7 +93,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 120%; 
       float: left;
-      margin-left: 8%;
+      margin-left: 10%;
       margin-top: 3%;
       padding: .25%;
       padding-bottom: .05%;
@@ -106,7 +105,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 120%; 
       float: left;
-      margin-left: 8%;
+      margin-left: 10%;
       margin-top: 3%;
       padding: .25%;
       padding-bottom: .05%;
@@ -118,7 +117,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 120%; 
       float: left;
-      margin-left: 8%;
+      margin-left: 10%;
       margin-top: 3%;
       padding: .25%;
       padding-bottom: .05%;
@@ -130,7 +129,7 @@ a.anchor {
       font-family: "Montserrat"; 
       font-size: 120%; 
       float: left;
-      margin-left: 8%;
+      margin-left: 10%;
       margin-top: 3%;
       padding: .25%;
       padding-bottom: .05%;
@@ -162,6 +161,10 @@ a.anchor {
       text-decoration: underline;
     }
 
+.dropdown {
+  display: none;
+  }
+
 
 
 /* This begins << after >> the navigation bar and is closed << before >> the footer */
@@ -175,7 +178,7 @@ a.anchor {
     .intro-header { 
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 6%; 
+      padding-top: 10%; 
       padding-bottom: 2.5%;
     }
 
@@ -602,7 +605,6 @@ img {
       top: 0;
       width: 100%;
       background-color: #F8F8F8;
-      overflow: hidden;
       padding-top: 1%;
       justify-content: center;
       margin: auto;
@@ -610,19 +612,19 @@ img {
     }
 
   #nav_2 { 
-    margin-left: 4%;
+    margin-left: 6%;
   }
   #nav_3 { 
-    margin-left: 4%;
+    margin-left: 8%;
   }
   #nav_4 { 
-    margin-left: 4%;
+    margin-left: 8%;
   }
   #nav_5 { 
-    margin-left: 4%;
+    margin-left: 8%;
   }
   #nav_6 { 
-    margin-left: 4%;
+    margin-left: 8%;
   }
 
 
