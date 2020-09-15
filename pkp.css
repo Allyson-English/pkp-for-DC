@@ -178,7 +178,7 @@ a.anchor {
     .intro-header { 
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 10%; 
+      padding-top: 12%; 
       padding-bottom: 2.5%;
     }
 
@@ -330,7 +330,7 @@ a.anchor {
             font-size: 130%; 
             float:center; 
             width:70%;
-            text-align: justify; 
+            text-align: left; 
             display: inline-block;
             margin-top: 3%;
         } 
@@ -373,7 +373,7 @@ a.anchor {
             display: inline-block;
             margin-top: 3%;
             margin-left: 5%;
-            text-align: justify;
+            text-align: left;
         } 
 
 
@@ -401,7 +401,7 @@ a.anchor {
           float:left; 
           width:50%; 
           margin:auto;
-          text-align: justify;
+          text-align: left;
           margin-bottom: 5%;
           margin-top: 5%;
           font-family: "Montserrat"; 
@@ -484,7 +484,7 @@ a.anchor {
           float:left; 
           width:50%; 
           margin:auto;
-          text-align: justify;
+          text-align: left;
           margin-bottom: 0%;
           margin-top: 5%;
           font-family: "Montserrat"; 
@@ -595,7 +595,7 @@ img {
         }
 
 
-@media only screen and (max-width: 1272px) {
+@media only screen and (max-width: 1330px) {
 
       .navigationbar { /* container where site navigation buttons sit */
       text-align: center;
@@ -611,7 +611,40 @@ img {
       width: 100%; 
     }
 
-  #nav_2 { 
+/*  #nav_2 { 
+    margin-left: 6%;
+  }
+  #nav_3 { 
+    margin-left: 8%;
+  }
+  #nav_4 { 
+    margin-left: 8%;
+  }
+  #nav_5 { 
+    margin-left: 8%;
+  }
+  #nav_6 { 
+    margin-left: 8%;
+  }*/
+
+
+@media only screen and (max-width: 1088px) {
+
+      .navigationbar { /* container where site navigation buttons sit */
+      text-align: center;
+      color: black;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #F8F8F8;
+      padding-top: 1%;
+      justify-content: center;
+      margin: auto;
+      width: 100%; 
+    }
+
+      #nav_2 { 
     margin-left: 6%;
   }
   #nav_3 { 
@@ -626,7 +659,6 @@ img {
   #nav_6 { 
     margin-left: 8%;
   }
-
 
 
 @media only screen and (max-width: 900px) {
