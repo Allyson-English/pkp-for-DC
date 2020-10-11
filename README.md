@@ -1,6 +1,6 @@
 # pkp-for-DC
 
-Campaign website for ANC candidate
+Campaign website for Washington, DC ANC candidate
 
 Current working version: www.patrickforanc.com
 
