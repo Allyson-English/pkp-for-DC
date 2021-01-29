@@ -6,15 +6,21 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title> Patrick for ANC </title>
-<!--   <link rel="icon" href="https://www.allysonenglish.io/staging/logo1.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/logo1.png"> -->
-  <link rel="icon" href="%PUBLIC_URL%/image/staging/logo1.png" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/staging/logo1.png" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Notification Banner JS -->
+<script src="src/jquery.notificationbanner.min.js"></script>
 
 </head>
 
 <body>
+
+<!-- Prompt user to sign up for newsletter-- notification -->
+    <div id="notify">Have you joined the Mount Vernon Triangle ANC Newsletter? <br> <a href="//mailchi.mp/e35be0bdca90/neighborhood-newsletter" target="_blank">Click Here</a> to keep up with all the work we're doing on the ANC.</div>
+
 
 <!-- Navigation Section -->
 
@@ -30,19 +36,17 @@
       </div>
 
       <!-- Mobile devices/ smaller screens -->
-<div class="dropdown">
-  <button onClick="show_dropdown()" id="button" class="dropbtn"><img src="./nav.png" alt="Menu"></button>
-  <div id="myDropdown" class="dropdown-content" >
-    <a href="#top" onClick="hide_dropdown()">Home</a>
-    <a href="#aboutme" onClick="hide_dropdown()">About Me</a>
-    <a href="#issues" onClick="hide_dropdown()">Issues</a>
-    <a href="#ANC" onClick="hide_dropdown()">What is the ANC?</a>
-    <a href="#intouch" onClick="hide_dropdown()">Get Involved</a>
-    <a href="#donate" onClick="hide_dropdown()">Donate</a>
-  </div>
-</div>
-
-
+      <div class="dropdown">
+        <button onClick="show_dropdown()" id="button" class="dropbtn"><img src="./nav.png" alt="Menu"></button>
+        <div id="myDropdown" class="dropdown-content" >
+          <a href="#top" onClick="hide_dropdown()">Home</a>
+          <a href="#aboutme" onClick="hide_dropdown()">About Me</a>
+          <a href="#issues" onClick="hide_dropdown()">Issues</a>
+          <a href="#ANC" onClick="hide_dropdown()">What is the ANC?</a>
+          <a href="#intouch" onClick="hide_dropdown()">Get Involved</a>
+          <a href="#donate" onClick="hide_dropdown()">Donate</a>
+        </div>
+      </div>
 
 
 <!-- Page width is set here Here -->
@@ -54,6 +58,14 @@
             <div id="personal_statement">I'm running for the Mount Vernon Triangle Advisory Neighborhood Commission (ANC).</div>
 
 <div id="mobile_img-abtme"><img src="./candidate.jpeg" alt="Photograph of ANC Candidate Patrick K. Parlej"></div> 
+
+<!-- if we decide not to use mailchimp, this embeded form should still work with github pages -->
+
+<!-- <form action="https://formspree.io/f/{form_id}" method="post">
+  <label for="email">Your Email</label>
+  <input name="Email" id="email" type="email">
+  <button type="submit">Submit</button>
+</form> -->
 
             <div id="why_im_running">Our neighborhood is in the midst of rapid change. During this time of uncertainty in our national politics, we, as a community, have a critical role to play in ensuring that our voices and our values are heard at the local level. I want to be an advocate for you and our neighbors.</div>
 
@@ -72,7 +84,6 @@
                   <br><br>
                 At its surface, local politics may seem less impactful than the national scene. After all, the ANC focuses on hyperlocal issues like street infrastructure and zoning. But these topics affect our daily lives and have an important role in how our community is shaped. History has shown time and again that real political change builds from the ground up. That’s why I’m running for the ANC. 
                 </div>
-
         </div>
     </div>
 
@@ -140,7 +151,7 @@
               <div id="fundingstatement">
                This campaign is a grassroots effort. If you believe in community engagement and the core issues outlined here, please consider making a contribution at the link below. Even more importantly, I also invite you to join me in getting involved in our local government. Let’s make a difference in our community, together.</div>
            
-            
+
               <div id="logobox">
                   <a href="//secure.actblue.com/donate/patrickforanc#" target="_blank">
                     <img src="./logo2.png" class="footer-img-box" alt="Patrick for DC">
@@ -162,7 +173,7 @@
                     All Rights Reserved®
                 </div>
                 <div class="rightsreserved"> 
-                    <a id="attributionlink" href="https://www.allysonenglish.io/professional/" target="_blank">Made By AE.</a>
+                    <a id="attributionlink" href="//allysonenglish.io" target="_blank">Made By AE.</a>
                 </div>
 
 </div>
