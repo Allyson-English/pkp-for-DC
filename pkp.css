@@ -25,6 +25,29 @@ a.anchor {
     visibility: hidden;
 }
 
+#notify{
+/*  text-align: center;*/
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  width: 1500px; 
+  height:100px;
+  color:black;
+  background-color:#ff6e6e;
+  font-family: "Montserrat"; 
+  font-size: 150%; 
+  text-align: left;
+  padding-top: 3%;
+  line-height: 1.5;
+  padding-left: 5%;
+/*  border: 10px solid red;*/
+
+}
+
+
 /* NAVIGATION BAR */
 
     /* On desktop, navigation bar remains fixed at the top of the screen */
@@ -536,6 +559,7 @@ a.anchor {
         a#donatehere {
           color: white;
           text-decoration: none;
+          border-radius: 10%;
         }
 
         a#donatehere:hover, a#donatehere:active {
@@ -568,6 +592,7 @@ img {
     font-family: "Montserrat";
     font-size: 30%;
     overflow: none;
+    padding-bottom: 11%;
 }
 
 .rightsreserved {
