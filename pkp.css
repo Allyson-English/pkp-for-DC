@@ -26,7 +26,6 @@ a.anchor {
 }
 
 #notify{
-/*  text-align: center;*/
   z-index: 2;
   position: fixed;
   bottom: 0;
@@ -34,7 +33,7 @@ a.anchor {
   overflow: hidden;
   margin: auto;
   width: 1500px; 
-  height:100px;
+  height:auto;
   color:black;
   background-color:#ff6e6e;
   font-family: "Montserrat"; 
@@ -42,9 +41,11 @@ a.anchor {
   text-align: left;
   padding-top: 3%;
   line-height: 1.5;
-  padding-left: 5%;
-/*  border: 10px solid red;*/
+/*  padding-left: 5%;*/
+}
 
+#newsletter_text {
+  padding-left: 5%;
 }
 
 
@@ -635,6 +636,29 @@ img {
       margin: auto;
       width: 100%; 
     }
+
+    #notify{
+      z-index: 2;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+      margin: auto;
+      width: 1330; 
+      height:auto;
+      color:black;
+      background-color:#ff6e6e;
+      font-family: "Montserrat"; 
+      font-size: 130%; 
+      text-align: left;
+      padding-top: 3%;
+      line-height: 1.5;
+    }
+
+    #newsletter_text {
+      padding-left: 5%;
+    }
+
 
 /*  #nav_2 { 
     margin-left: 6%;
