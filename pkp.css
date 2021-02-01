@@ -623,7 +623,7 @@ img {
 
 
 @media only screen and (max-width: 1330px) {
-/*
+
       .navigationbar { 
       text-align: center;
       color: black;
@@ -638,47 +638,25 @@ img {
       width: 100%; 
     }
 
-    #notify{
-      z-index: 2;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      overflow: hidden;
-      margin: auto;
-      width: 1330; 
-      height:auto;
-      color:black;
-      background-color:#ff6e6e;
-      font-family: "Montserrat"; 
-      font-size: 110%; 
-      text-align: left;
-      padding-top: 3%;
-      line-height: 1.5;
-    }
 
-    #newsletter_text {
-      padding-left: 5%;
-    }*/
-
-
-/*  #nav_2 { 
+  #nav_2 { 
     margin-left: 6%;
   }
   #nav_3 { 
-    margin-left: 8%;
+    margin-left: 6%;
   }
   #nav_4 { 
-    margin-left: 8%;
+    margin-left: 6%;
   }
   #nav_5 { 
-    margin-left: 8%;
+    margin-left: 6%;
   }
   #nav_6 { 
-    margin-left: 8%;
-  }*/
+    margin-left: 6%;
+  }
 
 
-/*@media only screen and (max-width: 1088px) {*/
+@media only screen and (max-width: 1083px) {
 
 /*      .navigationbar { 
       text-align: center;
@@ -692,26 +670,26 @@ img {
       justify-content: center;
       margin: auto;
       width: 100%; 
-    }
+    }*/
 
-      #nav_2 { 
-    margin-left: 6%;
+  #nav_2 { 
+    margin-left: 4%;
   }
   #nav_3 { 
-    margin-left: 8%;
+    margin-left: 4%;
   }
   #nav_4 { 
-    margin-left: 8%;
+    margin-left: 4%;
   }
   #nav_5 { 
-    margin-left: 8%;
+    margin-left: 4%;
   }
   #nav_6 { 
-    margin-left: 8%;
+    margin-left: 4%;
   }
 
 
-@media only screen and (max-width: 900px) {*/
+@media only screen and (max-width: 908px) {
 
 .navigationbar { 
       text-align: center;
